@@ -1,2 +1,0 @@
-# rajnath
-Raj Nath Sah
