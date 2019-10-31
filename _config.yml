@@ -10,7 +10,7 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Raj Nath Sah # add your name
-author-img: david-freeman.jpg # add your photo
+author-img: myimg.jpeg # add your photo
 about-author: I am a data engineer with interest in Sql, Python, Pl/Sql and data analytics. # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
