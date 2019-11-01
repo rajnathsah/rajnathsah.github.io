@@ -5,7 +5,6 @@ date: 2019-10-31 00:00:00 +0000
 description: Performance tuning concepts with approach to performance in Oracle Database. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-
 # Introduction
 
 * Performance tuning is a set of approach to optimize the database operations.
