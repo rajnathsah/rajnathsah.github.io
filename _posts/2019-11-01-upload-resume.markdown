@@ -7,7 +7,6 @@ img: # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Automation, Resume upload]
 ---
-
 # Automate resume upload
 
 Updating profile daily makes it easier for recruiter to notice profile. Using one click resume upload, job search can be made easy by keeping profile updated on [naukri.com](www.naukri.com) and [naukrigulf.com](www.naukrigulf.com).
