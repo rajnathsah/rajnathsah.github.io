@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Flask Restful Api
+title: Scrapy
 date: 2019-11-01 00:00:00 +0000
-description: Flask Restful Api example with sample code
+description: Scrape naukri.com data using scrapy framework
 img: # Add image post (optional)
-tags: [Flask, Restful Api, Python] # add tag
+tags: [Scrapy,Python]
 ---
-# Flask Restful Api
+# Scrape [Naukri.com](www.naukri.com) using Scrapy
 
-Flask-RESTful is an extension for flask that adds supports for quickly building REST APIs.
+# Scrapy
+An open source and collaborative framework for extracting the data you need from websites.
 
-In this example, restful api is exposed for viewing and manipulating data, for data storage sqlite database is used. 
-For more details, please refer github repo of [Flask Restful Api](https://github.com/rajnathsah/FlaskRestfulApi). It has all the needed details to setup and learn. It has docker file as well for quick build and deploy to test the example. Feel free to download and update code for learning.
+In a fast, simple, yet extensible way
+
 
 Happy learning.
