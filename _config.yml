@@ -1,25 +1,22 @@
 title: Raj Nath Sah
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: Data engineer equipped with SQL, PL/SQL, Python, Shell scripting and Automation
 permalink: ':title/'
-baseurl: "/rajnathsah.github.io" # the subpath of your site, e.g. /blog
-url: "rajnathsah.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/rajnathsah.github.io"
+url: "rajnathsah.github.io/"
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Raj Nath Sah # add your name
-author-img: myimg.jpg # add your photo
-about-author: I am a data engineer with interest in Sql, Python, Pl/Sql and data analytics. # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
-social-github: rajnathsah # add your Github handle
-social-linkedin: rajnathsah# add your Linkedin handle
-social-email: rajnath@live.in# add your Email address
+author: Raj Nath Sah
+author-img: myimg.jpg
+about-author: Developer with interest in Sql, Python, Pl/Sql, data analytics and DATA. # add description
+social-twitter: rajnathsah
+social-facebook: raj4u4all
+social-github: rajnathsah
+social-linkedin: rajnathsah
+social-email: rajnath@live.in
 
 # Disqus
-discus-identifier: https-rajnathsah-github-io # add your discus identifier
+discus-identifier: https-rajnathsah-github-io
 
 # Tracker
 analytics: # Google Analytics
