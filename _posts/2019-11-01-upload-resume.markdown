@@ -14,7 +14,7 @@ Updating profile daily makes it easier for recruiter to notice profile. Using on
 
 It is easy to configure and run, even novice can run it. It can be scheduled to run on personal computer also.
 
-Feel free to dowload the source code and executable and try it. In case of any issue or help, you can always reach me here in thread, social media or email.
+Feel free to dowload the source code and executable from [github](https://github.com/rajnathsah/AutoResumeUpload) and try it. In case of any issue or help, you can always reach me here in thread, social media or email.
+
 
 Happy job hunting.
-
