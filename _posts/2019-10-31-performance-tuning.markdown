@@ -12,4 +12,4 @@ img:  # Add image post (optional)
 * Most common tuning issues are because of poorly written codes and in case of oracle database it is sql or pl/sql.
 * Other factors could be database design or configuration or management.
 
-For more details, Please refer the github repo [link](https://github.com/rajnathsah/PerformanceTuning_Oracle) 
+For more details, Please refer the github repo [link](https://github.com/rajnathsah/PerformanceTuning_Oracle). 
