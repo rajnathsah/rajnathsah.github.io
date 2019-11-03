@@ -9,14 +9,14 @@ tags: [Oracle, SQL, PL/SQL]
 # Oracle Pl/Sql concepts and Q&A
 
 ##### 1. SQL Query processing    
-    Order of SQL query processing in Oracle database.  
-    * FROM 
-    * CONNECT BY 
-    * WHERE 
-    * GROUP BY 
-    * HAVING 
-    * SELECT 
-    * ORDER BY
+Order of SQL query processing in Oracle database.  
+  * FROM 
+  * CONNECT BY 
+  * WHERE 
+  * GROUP BY 
+  * HAVING 
+  * SELECT 
+  * ORDER BY
 ##### 2. How does database processes sql statement
     * SQL parsing (Includes syntax check, semantic check and shared pool check)
     * SQL optimization
