@@ -17,3 +17,8 @@ tags: [Oracle, SQL, PL/SQL]
     * HAVING 
     * SELECT 
     * ORDER BY
+2. How does database processes sql statement
+  * SQL parsing (Includes syntax check, semantic check and shared pool check)
+  * SQL optimization
+  * SQL row source generation
+  * Execution
