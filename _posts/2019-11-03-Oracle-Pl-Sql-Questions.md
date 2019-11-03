@@ -23,7 +23,8 @@ tags: [Oracle, SQL, PL/SQL]
     * SQL row source generation
     * Execution
 ##### 3. SQL Parsing
-    * SQL parsing involves separating the pieces of a SQL statement into a data structure that other routines can process. During the parsing database performs following checks.  
-        * Syntax check
-        * Semantic check
-        * Shared pool check
+    SQL parsing involves separating the pieces of a SQL statement into a data structure that other routines can process. 
+    During the parsing database performs following checks.  
+       * Syntax check
+       * Semantic check
+       * Shared pool check
