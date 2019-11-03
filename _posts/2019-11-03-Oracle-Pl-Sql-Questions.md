@@ -10,6 +10,7 @@ tags: [Oracle, SQL, PL/SQL] # add tag
 
 1. SQL Query processing  
 Order of SQL query processing in Oracle database.
+'''sql
 * FROM 
 * CONNECT BY 
 * WHERE 
@@ -17,3 +18,4 @@ Order of SQL query processing in Oracle database.
 * HAVING 
 * SELECT 
 * ORDER BY
+'''
