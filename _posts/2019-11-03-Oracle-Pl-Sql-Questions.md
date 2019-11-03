@@ -42,3 +42,8 @@ Based on shared pool check, if Oracle Database cannot reuse existing code, then 
 ##### 5. What is soft parse
 A soft parse is any parse that is not a hard parse. If the submitted statement is the same as a reusable SQL statement in the shared pool, then Oracle Database reuses the existing code. This reuse of code is also called a **library cache hit**.  
 
+##### 6. What is latch
+A latch is an internal Oracle mechanism used to protect data structures in the SGA from simultaneous access. Atomic hardware instructions like TEST-AND-SET are used to implement latches. Latches are more restrictive than locks in that they are always exclusive. Latches are never queued, but will spin or sleep until it obtains a resource or times out. Latches are important for performance tuning.
+In another word, laches are a type of locks.
+
+
