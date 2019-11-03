@@ -8,7 +8,7 @@ tags: [Oracle, SQL, PL/SQL]
 ---
 # Oracle Pl/Sql concepts and Q&A
 
-1. SQL Query processing    
+#### 1. SQL Query processing    
     Order of SQL query processing in Oracle database.  
     * FROM 
     * CONNECT BY 
@@ -18,7 +18,7 @@ tags: [Oracle, SQL, PL/SQL]
     * SELECT 
     * ORDER BY
 2. How does database processes sql statement
-  * SQL parsing (Includes syntax check, semantic check and shared pool check)
-  * SQL optimization
-  * SQL row source generation
-  * Execution
+    * SQL parsing (Includes syntax check, semantic check and shared pool check)
+    * SQL optimization
+    * SQL row source generation
+    * Execution
