@@ -17,11 +17,13 @@ Order of SQL query processing in Oracle database.
   * HAVING 
   * SELECT 
   * ORDER BY
+  
 ##### 2. How does database processes sql statement
   * SQL parsing (Includes syntax check, semantic check and shared pool check)
   * SQL optimization
   * SQL row source generation
   * Execution
+
 ##### 3. SQL Parsing
 SQL parsing involves separating the pieces of a SQL statement into a data structure that other routines can process. During the parsing database performs following checks.  
   * Syntax check
