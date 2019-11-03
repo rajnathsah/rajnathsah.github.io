@@ -4,7 +4,7 @@ title: Flask Restful Api
 date: 2019-11-01 00:00:00 +0000
 description: Flask Restful Api example with sample code
 img: # Add image post (optional)
-tags: [Flask, Restful Api, Python] # add tag
+tags: [Flask, RestfulApi, Python] # add tag
 ---
 # Flask Restful Api
 
