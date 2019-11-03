@@ -36,5 +36,9 @@ SQL parsing involves separating the pieces of a SQL statement into a data struct
     * Hard Parse
     * Soft Parse
 
-##### 4. What is hard parsing
+##### 4. What is hard parse
 Based on shared pool check, if Oracle Database cannot reuse existing code, then it must build a new executable version of the application code. This operation is known as a **hard parse**, or a **library cache miss**. During the hard parse, the database accesses the library cache and data dictionary cache numerous times to check the data dictionary. When the database accesses these areas, it uses a serialization device called a **latch** on required objects so that their definition does not change. Latch contention *increases statement execution time* and decreases concurrency.  
+
+##### 5. What is soft parse
+A soft parse is any parse that is not a hard parse. If the submitted statement is the same as a reusable SQL statement in the shared pool, then Oracle Database reuses the existing code. This reuse of code is also called a **library cache hit**.  
+
