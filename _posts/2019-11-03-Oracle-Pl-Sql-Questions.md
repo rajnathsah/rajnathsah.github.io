@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Oracle Pl/Sql concepts and Q&A
+title: Oracle Sql and Pl/Sql concepts and Q&A
 date: 2019-11-03 00:00:00 +0000
-description: Oracle Pl/Sql concepts and question and answer for interview preperation
+description: Oracle Sql and Pl/Sql concepts with question and answer for interview preperation
 img: # Add image post (optional)
 tags: [Oracle, SQL, PL/SQL]
 ---
-# Oracle Pl/Sql concepts and Q&A
+# Oracle Sql and Pl/Sql concepts and Q&A
+I will try to add all the important topics in Q&A format based on my experience. Feel free to update me in case of any observation or you want to add anything. This post is specific to technical concepts.
 
 ##### 1. SQL Query processing    
 Order of SQL query processing in Oracle database.  
