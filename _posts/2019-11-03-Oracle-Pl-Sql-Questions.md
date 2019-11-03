@@ -35,3 +35,7 @@ SQL parsing involves separating the pieces of a SQL statement into a data struct
     Database performs a shared pool check to determine whether it can skip resource-intensive steps of statement processing.When a user submits a SQL statement, the database searches the shared SQL area to see if an existing parsed statement has the same hash value. Based on result of hash check, it follows below.
     * Hard Parse
     * Soft Parse
+
+##### 4. What is hard parsing
+Based on shared pool check, if Oracle Database cannot reuse existing code, then it must build a new executable version of the application code. This operation is known as a hard parse, or a library cache miss.
+During the hard parse, the database accesses the library cache and data dictionary cache numerous times to check the data dictionary. When the database accesses these areas, it uses a serialization device called a latch on required objects so that their definition does not change. Latch contention increases statement execution time and decreases concurrency.
