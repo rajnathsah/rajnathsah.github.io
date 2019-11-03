@@ -7,3 +7,13 @@ img: # Add image post (optional)
 tags: [Oracle, SQL, PL/SQL] # add tag
 ---
 # Oracle Pl/Sql concepts and Q&A
+
+1. SQL Query processing  
+Order of SQL query processing in Oracle database.
+* FROM 
+* CONNECT BY 
+* WHERE 
+* GROUP BY 
+* HAVING 
+* SELECT 
+* ORDER BY
