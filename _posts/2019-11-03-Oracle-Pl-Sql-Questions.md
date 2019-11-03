@@ -28,5 +28,10 @@ Order of SQL query processing in Oracle database.
 ##### 3. SQL Parsing
 SQL parsing involves separating the pieces of a SQL statement into a data structure that other routines can process. During the parsing database performs following checks.  
   * Syntax check
+    check each SQL statement for syntactic validity.    
   * Semantic check
+    A semantic check determines whether a statement is meaningful, for example, whether the objects and columns in the statement exist.
   * Shared pool check
+    Database performs a shared pool check to determine whether it can skip resource-intensive steps of statement processing.When a user submits a SQL statement, the database searches the shared SQL area to see if an existing parsed statement has the same hash value. Based on result of hash check, it follows below.
+    * Hard Parse
+    * Soft Parse
