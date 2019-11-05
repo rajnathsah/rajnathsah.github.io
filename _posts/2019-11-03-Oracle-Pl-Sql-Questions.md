@@ -50,7 +50,7 @@ In another word, laches are a type of locks.
 Locks are mechanisms that prevent destructive interaction between transactions accessing the same resource. The resources can be either:
     * user objects, such as tables and rows,
     * or system objects not visible to users, such as shared data structures in memory and data dictionary rows.
-Oracle Database automatically obtains and manages necessary locks when executing SQL statements. For more details on [lock](https://docs.oracle.com/cd/B19306_01/server.102/b14220/consist.htm) refer oracle docs link.
+Oracle Database automatically obtains and manages necessary locks when executing SQL statements. For more details on lock refer oracle docs link on [Data Concurrency and Consistency](https://docs.oracle.com/database/121/CNCPT/consist.htm).
 
 
 
