@@ -46,4 +46,11 @@ A soft parse is any parse that is not a hard parse. If the submitted statement i
 A latch is an internal Oracle mechanism used to protect data structures in the SGA from simultaneous access. Atomic hardware instructions like TEST-AND-SET are used to implement latches. Latches are more restrictive than locks in that they are always exclusive. Latches are never queued, but will spin or sleep until it obtains a resource or times out. Latches are important for performance tuning.
 In another word, laches are a type of locks.
 
+##### 7. What is lock
+Locks are mechanisms that prevent destructive interaction between transactions accessing the same resource. The resources can be either:
+    * user objects, such as tables and rows,
+    * or system objects not visible to users, such as shared data structures in memory and data dictionary rows.
+Oracle Database automatically obtains and manages necessary locks when executing SQL statements. For more details on [lock](https://docs.oracle.com/cd/B19306_01/server.102/b14220/consist.htm) refer oracle docs link.
+
+
 
