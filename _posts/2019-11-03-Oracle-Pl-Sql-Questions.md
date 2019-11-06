@@ -52,5 +52,12 @@ Locks are mechanisms that prevent destructive interaction between transactions a
     * or system objects not visible to users, such as shared data structures in memory and data dictionary rows.
 Oracle Database automatically obtains and manages necessary locks when executing SQL statements. For more details on lock refer oracle docs link on [Data Concurrency and Consistency](https://docs.oracle.com/database/121/CNCPT/consist.htm).
 
-
-
+##### 8. Difference between lock and latch
+Following are the differences between these two:
+    * Latches are short term in length of operation and locks are long duration in restricting access to Oracle data structures.
+    * Latches are lightweight serialization and locks are the heavy duty long running serialization mechanism.
+    * Locks permit shared and concurrent access while latches allow access to only a single process at a time and prevent other processes within Oracle from accessing that process while a latch is held by the process.
+    * Latches affect only data structures within the Oracle SGA, whereas locks apply to Oracle transactions.
+    * Latch can be requested in only two modes: no-wait and willing-to-wait, while locks have six different request modes: null, row share, row exclusive, share row exclusive, share, or exclusive.
+    * Latches are visible only to the local instance in memory as opposed to locks which maintain information within the Oracle database and are visible to all of the instances that have access to the database.
+   
