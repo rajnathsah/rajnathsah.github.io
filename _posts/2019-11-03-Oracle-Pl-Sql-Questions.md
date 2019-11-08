@@ -103,4 +103,4 @@ There are two types of cursors:-
   * A variable created based on such a data type is generally called a cursor variable. 
   * A cursor variable can be associated with different queries at run-time. 
   * The primary advantage of using cursor variables is their capability to pass result sets between sub programs (like stored procedures, functions, packages etc.).
-
+  * Refer [example](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/ref_cursor.md) for more details.
