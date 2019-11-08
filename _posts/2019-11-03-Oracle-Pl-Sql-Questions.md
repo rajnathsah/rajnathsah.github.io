@@ -6,8 +6,7 @@ description: Oracle Sql and Pl/Sql concepts with question and answer for intervi
 img: # Add image post (optional)
 tags: [Oracle, SQL, PL/SQL]
 ---
-# Oracle Sql and Pl/Sql topics
-I will try to add all the important topics in Q&A format based on my experience. Feel free to update me in case of any observation or you want to add anything. This post is specific to technical concepts.
+Important topics in Q&A format based on my experience. Feel free to update me in case of any observation or you want to add anything. This post is specific to technical concepts.
 
 ##### 1. What is SQL query execution order?    
 Order of SQL query processing in Oracle database.  
