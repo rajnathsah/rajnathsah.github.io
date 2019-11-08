@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Oracle Sql and Pl/Sql concepts and Q&A
+title: Oracle Sql and Pl/Sql topics as Q&A
 date: 2019-11-03 00:00:00 +0000
 description: Oracle Sql and Pl/Sql concepts with question and answer for interview preperation
 img: # Add image post (optional)
 tags: [Oracle, SQL, PL/SQL]
 ---
-# Oracle Sql and Pl/Sql concepts and Q&A
+# Oracle Sql and Pl/Sql topics
 I will try to add all the important topics in Q&A format based on my experience. Feel free to update me in case of any observation or you want to add anything. This post is specific to technical concepts.
 
 ##### 1. What is SQL query execution order?    
@@ -63,11 +63,14 @@ Following are the differences between these two:
    
 ##### 9. What is cursor?
 A cursor is a pointer which points towards a pre allocated memory location in the PGA. The memory location to which it points is known as context area, oracle associates every SELECT statement with a cursor to hold the query information in this context area.  
-There are two types of cursors
-  * Implicit cursors
-  * Explicit cursors  
-  
+There are two types of cursors:-    
   * Implicit cursors
     * Oracle sever processes every SQL statement in a PL/SQL block as an implicit cursor.
     * All the DML and select query with INTO or BULK COLLECT clauses are candidates for implicit cursors.
-    * When a sql statement is executed, oracle automatically allocates a memory area known as context area in the PGA associated with the session.
+    * When a sql statement is executed, oracle automatically allocates a memory area known as context area in the PGA associated with the session.  
+    * For implicit cursor, the complete execution cycle is internally handled and maintained by the oracle server.
+    * Cursor attributes: -
+      * SQL%ROWCOUNT
+      * SQL%ISOPEN
+      * SQL%FOUND
+      * SQL%NOTFOUND
