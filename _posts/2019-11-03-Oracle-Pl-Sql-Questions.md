@@ -90,10 +90,17 @@ There are two types of cursors:-
        * Open stage- 
          * PGA memory allocation for cursor processing
          * Parsing of select statement
-         * variable binding
+         * Variable binding
          * Select query execution
          * Move the record pointer to the first record
        * Fetch stage
          * The record to which record pointer points is pulled from the result set.Fetch phase lives until the last record is reached.
        * Close statge
-         * After the last record of the result set is reached, cursor is closed and allocated memory is flushed off and released back to SGA. Even if and open cursor is not closed, oracle automatically closes it after the execution of its parent block.
+         * After the last record of the result set is reached, cursor is closed and allocated memory is flushed off and released back to SGA. Even if and open cursor is not closed, oracle automatically closes it after the execution of its parent block.  
+
+##### 10. What is Ref Cursor?
+  * A Ref cursor is basically a data type. 
+  * A variable created based on such a data type is generally called a cursor variable. 
+  * A cursor variable can be associated with different queries at run-time. 
+  * The primary advantage of using cursor variables is their capability to pass result sets between sub programs (like stored procedures, functions, packages etc.).
+
