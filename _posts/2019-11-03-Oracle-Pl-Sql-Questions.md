@@ -92,3 +92,5 @@ For detailed comparison, please refer [Decode & Case](https://github.com/rajnath
 ##### 12. What is deterministic function?
 A function is called deterministic function, if function always return the same output for multiple invocation with same given input arguments. For more details with example, please refer [deterministic function](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Deterministic%20function.md).
 
+##### 13. What is Global temporary table?
+A temporary table is a table that holds data only for the duration of a session or transaction. GTT (Global Temporary Table) is used for storing temporary data which is needed or reffered only during a transaction and session. For more details about syntax and usage, Please refer [global temporary](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Global%20Temporary%20Table.md) document.
