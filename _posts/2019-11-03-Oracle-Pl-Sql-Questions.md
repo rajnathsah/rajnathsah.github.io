@@ -73,3 +73,17 @@ For more details, refer [cursor](https://github.com/rajnathsah/Oracle-Scripts-an
   * A cursor variable can be associated with different queries at run-time. 
   * The primary advantage of using cursor variables is their capability to pass result sets between sub programs (like stored procedures, functions, packages etc.).
   * Refer [example](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/ref_cursor.md) for more details.
+##### 11. Difference between decode and case statement?
+DECODE and CASE statements (In oracle) provides a conditional construct, of this form
+```sql
+if A = n1 
+ then A1
+else if A = n2 
+ then A2
+else X
+```
+* Oracle database prior to 8.1.6 only had DECODE function.
+* CASE was introduced in Oracle 8.1.6 as a standard, more meaningful and more powerful function.
+* Everything DECODE can do, CASE can. There is a lot else CASE can do though, which DECODE cannot.
+* DECODE performs an equality check only. CASE is capable of other logical comparisons such as < > etc.  
+For detailed comparison, please refer [Decode & Case](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Decode%20and%20Case.md).
