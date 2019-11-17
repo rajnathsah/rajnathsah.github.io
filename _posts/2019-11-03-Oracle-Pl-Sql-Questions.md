@@ -73,6 +73,7 @@ For more details, refer [cursor](https://github.com/rajnathsah/Oracle-Scripts-an
   * A cursor variable can be associated with different queries at run-time. 
   * The primary advantage of using cursor variables is their capability to pass result sets between sub programs (like stored procedures, functions, packages etc.).
   * Refer [example](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/ref_cursor.md) for more details.
+  
 ##### 11. Difference between decode and case statement?
 DECODE and CASE statements (In oracle) provides a conditional construct, of this form
 ```sql
@@ -87,3 +88,7 @@ else X
 * Everything DECODE can do, CASE can. There is a lot else CASE can do though, which DECODE cannot.
 * DECODE performs an equality check only. CASE is capable of other logical comparisons such as < > etc.  
 For detailed comparison, please refer [Decode & Case](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Decode%20and%20Case.md).
+
+##### 12. What is deterministic function?
+A function is called deterministic function, if function always return the same output for multiple invocation with same given input arguments. For more details with example, please refer [deterministic function](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Deterministic%20function.md).
+
