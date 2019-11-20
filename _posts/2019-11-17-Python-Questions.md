@@ -11,3 +11,7 @@ Important topics in Q&A format is based on my experience. Feel free to update me
 ##### 1. How to debug pip installation error?
 For debugging purpose, pip displays some installation message on console. It also offers ways to control console level log by -v,--verbose, -q and --quiet. Full log can be saved by providing --log option with file path, it will have complete installation log. There are cases where currupt download also creates issues at the time of installation, in that case try --no-cache-dir. If that also does not work then you can always try the installation from source file.
 
+##### 2. Difference between list and dict?
+###### List
+###### Dict
+
