@@ -71,6 +71,16 @@ Set of common useful linux command with basic description and usage.
   * ps -ef  
   List all running processes on system in full format.  
 * **scp** - Copies files between servers in secure way.
+  * scp username@from_host:file.txt /local/directory/  
+  Copy file from a remote host to local host.  
+  * scp file.txt username@to_host:/remote/directory/  
+  Copy file from local host to a remote host.  
+  * scp -r username@from_host:/remote/directory/  /local/directory/  
+  Copy directory from a remote host to local host.  
+  * scp -r /local/directory/ username@to_host:/remote/directory/  
+  Copy directory from local host to a remote host.  
+  * scp username@from_host:/remote/directory/file.txt username@to_host:/remote/directory/  
+  Copy file from remote host to remote host  
 * **grep** - Searches text in file or text
 * **chown** - Change the owner
 * **df** - Displays the amount of available disck space for file system
