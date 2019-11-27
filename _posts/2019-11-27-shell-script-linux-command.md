@@ -121,8 +121,24 @@ Set of common useful linux command with basic description and usage.
   * df --output={field_name1, field_name2}  
   Display the certain fields in df command output. Valid field names are: ‘source’, ‘fstype’, ‘itotal’, ‘iused’, ‘iavail’, ‘ipcent’, ‘size’, ‘used’, ‘avail’, ‘pcent’ and ‘target’.  
 * **mv** - Move the file from one location to another or rename the file
+  * mv -f source dest  
+  Force move by overwriting destination file without prompt.  
+  * mv -i source dest  
+  Interactive prompt before overwrite.  
+  * mv -u source dest  
+  Move when source is newer than destination.  
+  * mv -v source dest  
+  Print source and destination files while moving.  
 * **head** - Prints the first part of given file, by default it prints first 10 lines
+  * head -<line> <filename>  
+  Print number of line from filename.  
+  * head -c<line> <filename>  
+  Print number of line character from filename.  
 * **tail** - Prints the last part of given file, by default it prints last 10 lines 
+  * tail -<noline> <filename>
+  Print number of line from filename from end of file. 
+  * tail -c<line> <filename>
+  Print number of line character from filename from end of file.  
 * **du** - Display the file/directory space usage
 
 # Useful shell script sniplets
