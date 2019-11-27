@@ -99,6 +99,14 @@ Set of common useful linux command with basic description and usage.
   * grep -l 'main' *.c
   List all files whose content mention main.  
 * **chown** - Change the owner
+  * chown owner-user file  
+  Change ownership of file to owner-user.  
+  * chown owner-user:owner-group file  
+  Change ownership and group of file to owner-user and owner-group.  
+  * chown owner-user:owner-group directory  
+  Change ownership and group of directory to owner-user and owner-group.  
+  * chown -R owner-user:owner-group directory  
+  Change ownership and group of directory and sub directory recursively to owner-user and owner-group.  
 * **df** - Displays the amount of available disck space for file system
 * **mv** - Move the file from one location to another or rename the file
 * **head** - Prints the first part of given file, by default it prints first 10 lines
