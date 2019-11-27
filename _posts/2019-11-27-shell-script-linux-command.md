@@ -82,6 +82,22 @@ Set of common useful linux command with basic description and usage.
   * scp username@from_host:/remote/directory/file.txt username@to_host:/remote/directory/  
   Copy file from remote host to remote host  
 * **grep** - Searches text in file or text
+  * grep 'word' filename  
+  Search any line that contains the word in filename.  
+  * grep -i 'bar' file1  
+  A case-insensitive search for the word ‘bar’.  
+  * grep -R 'foo' .  
+  Search all files in the current directory and in all of its subdirectories for the word ‘foo’.
+  * grep -c 'nixcraft' frontpage.md  
+  Search and display the total number of times that the string ‘nixcraft’ appears in a file named frontpage.md.  
+  * grep -w "boo" file  
+  Searches whole word in file.  
+  * egrep -w 'word1|word2' /path/to/file
+  Searches 2 different words in file.  
+  * grep -n 'root' /etc/passwd  
+  Precede each line of output with the number of the line in the text file from which it was obtained.  
+  * grep -l 'main' *.c
+  List all files whose content mention main.  
 * **chown** - Change the owner
 * **df** - Displays the amount of available disck space for file system
 * **mv** - Move the file from one location to another or rename the file
