@@ -6,7 +6,8 @@ description: Useful shell script and linux command. # Add post description (opti
 img:  # Add image post (optional)
 tags: [Shell Script, Linux command]
 ---
-# Important linux command
+# Useful linux command
+Set of common useful linux command with basic description and usage.  
 * ls - List directory contents
 * cat - Print and concatenate file
 * touch - Updates timestamp of the file and create empty file
@@ -26,7 +27,8 @@ tags: [Shell Script, Linux command]
 * tail - Prints the last part of given file, by default it prints last 10 lines 
 * du - Display the file/directory space usage
 
-# Important shell script sniplets
+# Useful shell script sniplets
+Set of useful shell script sniplets which are handy in day to work as database developer and admin.    
 * Validate if directory exist or not
 ```shell
 #!/bin/bash
