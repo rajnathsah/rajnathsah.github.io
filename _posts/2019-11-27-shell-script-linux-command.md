@@ -25,3 +25,16 @@ tags: [Shell Script, Linux command]
 * head - Prints the first part of given file, by default it prints first 10 lines
 * tail - Prints the last part of given file, by default it prints last 10 lines 
 * du - Display the file/directory space usage
+
+# Important shell script sniplets
+* Validate if directory exist or not
+```shell
+#!/bin/bash
+dir='sample_dir'
+if [ -d "$dir" -a ! -h "$dir" ]
+then
+   echo "$dir found"
+else
+   echo "Error: $dir not found."
+fi
+```
