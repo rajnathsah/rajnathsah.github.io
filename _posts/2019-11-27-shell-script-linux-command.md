@@ -1,14 +1,18 @@
 ---
 layout: post
-title: "Shell script and Linux command"
+title: "Linux command and Shell script"
 date: 2019-11-27 00:00:00 +0000
-description: Useful shell script and linux command. # Add post description (optional)
+description: Useful linux command and shell script. # Add post description (optional)
 img:  # Add image post (optional)
 tags: [Shell Script, Linux command]
 ---
 # Useful linux command
 Set of common useful linux command with basic description and usage.  
 * ls - List directory contents
+  * ls
+  Prints all non hidden files and directory in current path.
+  * ls -a
+  Prints all all files and directories (including hidden ones).
 * cat - Print and concatenate file
 * touch - Updates timestamp of the file and create empty file
 * man - Displays manual pages
