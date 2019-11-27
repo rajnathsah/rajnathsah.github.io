@@ -94,3 +94,20 @@ A function is called deterministic function, if function always return the same 
 
 ##### 13. What is Global temporary table?
 A temporary table is a table that holds data only for the duration of a session or transaction. GTT (Global Temporary Table) is used for storing temporary data which is needed or reffered only during a transaction and session. For more details about syntax and usage, Please refer [global temporary](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Global%20Temporary%20Table.md) document.
+
+##### 14. How to execute sql query and procedure from shell script?
+* Command to execute sql script and print value
+```shell
+val=`sqlplus -s <db username>/<db password>@<service name> <<EOF
+set heading off
+set pagesize 0
+select sysdate from dual;
+exit
+EOF`
+echo "System date - $val"
+```
+* Command to execute procedure and print log
+```shell
+val=`echo "execute  proc_hello_world;" | sqlplus <db username>/<db password>@<service name> | tail -5 | head -n1`
+echo "$val"
+```
