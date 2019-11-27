@@ -59,7 +59,17 @@ Set of common useful linux command with basic description and usage.
   * cp -pr <directory> <new directory>  
   Create new copy of directory by coping data while preserving timestamp.  
 * **mkdir** - Make directory
+  * mkdir <directory name>  
+  Creates directory with <directory name>. 
+  * mkdir -p <directorty 1>/<directory 2>  
+  Creates parent and sub-directory if not present.  
+  * mkdir <directory 1> <directory 2> <directory 3>
+  Creates all 3 directory in current working directory.  
 * **ps** - List current running processes
+  * ps  
+  List current running processes by logged in user.
+  * ps -ef  
+  List all running processes on system in full format.  
 * **scp** - Copies files between servers in secure way.
 * **grep** - Searches text in file or text
 * **chown** - Change the owner
