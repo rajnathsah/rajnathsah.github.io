@@ -108,6 +108,18 @@ Set of common useful linux command with basic description and usage.
   * chown -R owner-user:owner-group directory  
   Change ownership and group of directory and sub directory recursively to owner-user and owner-group.  
 * **df** - Displays the amount of available disck space for file system
+  * df  
+  Display disk usage.  
+  * df -a  
+  Display disk usage of all the file systems.  
+  * df -h  
+  Display disk usage in human readable format.  
+  * df -T  
+  Display the file system type in the output.  
+  * df -h --total  
+  Display the grand total of disk usage of all the file system.  
+  * df --output={field_name1, field_name2}  
+  Display the certain fields in df command output. Valid field names are: ‘source’, ‘fstype’, ‘itotal’, ‘iused’, ‘iavail’, ‘ipcent’, ‘size’, ‘used’, ‘avail’, ‘pcent’ and ‘target’.  
 * **mv** - Move the file from one location to another or rename the file
 * **head** - Prints the first part of given file, by default it prints first 10 lines
 * **tail** - Prints the last part of given file, by default it prints last 10 lines 
