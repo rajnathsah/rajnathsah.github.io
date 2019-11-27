@@ -41,7 +41,23 @@ Set of common useful linux command with basic description and usage.
   * cd -
   Changes to previous directory path.  
 * rm - Remove files and directory
+  * rm <filename>
+  Delete the filename file.  
+  * rm -i <filename>  
+  Deletes the file in interactive way.  
+  * rm -r <directory>  
+  Removes directory and its content recursively.  
+  * rm -rf <directory>
+  Remove directory and its content by force recursively.  
 * cp - Copies files and directory
+  * cp <filename> <directory>  
+  Copies files to directory.  
+  * cp -R <source directory> <target directory>  
+  Copies data of source directory to target directory recursively.  
+  * cp -pr <filename> <new filename>  
+  Copy data to new file while preserving timestamp, it can be used for taking backup.  
+  * cp -pr <directory> <new directory>  
+  Create new copy of directory by coping data while preserving timestamp.  
 * mkdir - Make directory
 * ps - List current running processes
 * scp - Copies files between servers in secure way.
