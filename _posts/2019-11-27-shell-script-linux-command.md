@@ -10,24 +10,36 @@ tags: [Shell Script, Linux command]
 Set of common useful linux command with basic description and usage.  
 * ls - List directory contents
   * ls  
-  Prints all non hidden files and directory in current path  
+  Prints all non hidden files and directory in current path.  
   * ls -a  
-  Prints all files and directories (including hidden ones)  
+  Prints all files and directories (including hidden ones).  
   * ls -lrth  
-  Prints all files and directories in ascending order    
+  Prints all files and directories in ascending order.  
 * cat - Print and concatenate file
   * cat filename  
-  Prints the data of filename
+  Prints the data of filename.
   * cat file1 > file2  
-  Copies data of file1 to file2
+  Copies data of file1 to file2.
   * cat file1 file2 > file3  
-  Redirect data of file1 and file2 to file3 
+  Redirect data of file1 and file2 to file3. 
 * touch - Updates timestamp of the file and create empty file
   * touch filename  
-  If filename is existing file then it updates the last modified timestamp to current timestamp, in case filename does not exist then it creates empty file    
+  If filename is existing file then it updates the last modified timestamp to current timestamp, in case filename does not exist then it creates empty file.  
 * man - Displays manual pages
+  * man <command>  
+  Display the manual pages of command.  
 * pwd - Prints working directory
+  * pwd  
+  Display the full path of current working directory.  
 * cd - Change directory
+  * cd  
+  Moves to home directory
+  * cd <directory name>  
+  Change the directory to the given directoy.  
+  * cd ..
+  Changes one directory back
+  * cd -
+  Changes to previous directory path.  
 * rm - Remove files and directory
 * cp - Copies files and directory
 * mkdir - Make directory
