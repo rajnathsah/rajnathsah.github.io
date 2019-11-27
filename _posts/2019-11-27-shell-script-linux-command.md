@@ -58,16 +58,16 @@ Set of common useful linux command with basic description and usage.
   Copy data to new file while preserving timestamp, it can be used for taking backup.  
   * cp -pr <directory> <new directory>  
   Create new copy of directory by coping data while preserving timestamp.  
-* mkdir - Make directory
-* ps - List current running processes
-* scp - Copies files between servers in secure way.
-* grep - Searches text in file or text
-* chown - Change the owner
-* df - Displays the amount of available disck space for file system
-* mv - Move the file from one location to another or rename the file
-* head - Prints the first part of given file, by default it prints first 10 lines
-* tail - Prints the last part of given file, by default it prints last 10 lines 
-* du - Display the file/directory space usage
+* **mkdir** - Make directory
+* **ps** - List current running processes
+* **scp** - Copies files between servers in secure way.
+* **grep** - Searches text in file or text
+* **chown** - Change the owner
+* **df** - Displays the amount of available disck space for file system
+* **mv** - Move the file from one location to another or rename the file
+* **head** - Prints the first part of given file, by default it prints first 10 lines
+* **tail** - Prints the last part of given file, by default it prints last 10 lines 
+* **du** - Display the file/directory space usage
 
 # Useful shell script sniplets
 Set of useful shell script sniplets which are handy in day to work as database developer and admin.    
