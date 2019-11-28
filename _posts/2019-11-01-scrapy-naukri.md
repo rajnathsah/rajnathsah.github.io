@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scrape web data using Scrapy
+title: Scrape web using Scrapy
 date: 2019-11-01 00:00:00 +0000
 description: Scrape naukri.com data using scrapy framework
 img: # Add image post (optional)
