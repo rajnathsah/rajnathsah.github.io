@@ -154,3 +154,23 @@ else
    echo "Error: $dir not found."
 fi
 ```
+* List directory content with size
+```shell
+ls -lrth|grep G
+```
+* Truncate log files without deleting it
+```shell
+cat /dev/null > <filename>
+```
+* Archive log files to save space
+```shell
+tar -czvf <zip filename>.tar.gz <file name>
+```
+* Archive content of a directory and remove files
+```shell
+tar -zcvf out_file.tar.gz --remove-files out_file
+```
+* Search given text in all files in a given path and prints it
+```shell
+find $fpath -type f -exec grep -H -i "$search" {} \;|awk -F ':' '{print $1}'|sort
+```
