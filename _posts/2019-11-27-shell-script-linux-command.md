@@ -26,10 +26,10 @@ Set of common useful linux command with basic description and usage.
   * touch filename  
   If filename is existing file then it updates the last modified timestamp to current timestamp, in case filename does not exist then it creates empty file.  
 * **vi** - Open file in read only mode, if file does not exist then creates new one.  
-  * vi <file name>  
+  * vi filename  
   Open file in read only mode, use i to enter into edit mode, use esc :wq to save the change, use esc :q to quit the file without saving it. To search anything in file use vi <file name> then press / and type search keyword, to search for next occurence use n keyword.  
 * **man** - Displays manual pages
-  * man <command>  
+  * man {command}  
   Display the manual pages of command.  
 * **pwd** - Prints working directory
   * pwd  
@@ -37,36 +37,36 @@ Set of common useful linux command with basic description and usage.
 * **cd** - Change directory
   * cd  
   Moves to home directory
-  * cd <directory name>  
+  * cd directoryname  
   Change the directory to the given directoy.  
   * cd ..
   Changes one directory back
   * cd -
   Changes to previous directory path.  
 * **rm** - Remove files and directory
-  * rm <filename>
+  * rm filename
   Delete the filename file.  
-  * rm -i <filename>  
+  * rm -i filename  
   Deletes the file in interactive way.  
-  * rm -r <directory>  
+  * rm -r directory  
   Removes directory and its content recursively.  
-  * rm -rf <directory>
+  * rm -rf directory
   Remove directory and its content by force recursively.  
 * **cp** - Copies files and directory
-  * cp <filename> <directory>  
+  * cp filename directory  
   Copies files to directory.  
-  * cp -R <source directory> <target directory>  
+  * cp -R source-directory target-directory  
   Copies data of source directory to target directory recursively.  
-  * cp -pr <filename> <new filename>  
+  * cp -pr filename new-filename  
   Copy data to new file while preserving timestamp, it can be used for taking backup.  
-  * cp -pr <directory> <new directory>  
+  * cp -pr directory new-directory  
   Create new copy of directory by coping data while preserving timestamp.  
 * **mkdir** - Make directory
-  * mkdir <directory name>  
-  Creates directory with <directory name>. 
-  * mkdir -p <directorty 1>/<directory 2>  
+  * mkdir directory-name  
+  Creates directory with directory name. 
+  * mkdir -p directorty-1/directory 2  
   Creates parent and sub-directory if not present.  
-  * mkdir <directory 1> <directory 2> <directory 3>
+  * mkdir directory-1 directory-2 directory-3
   Creates all 3 directory in current working directory.  
 * **ps** - List current running processes
   * ps  
@@ -133,14 +133,14 @@ Set of common useful linux command with basic description and usage.
   * mv -v source dest  
   Print source and destination files while moving.  
 * **head** - Prints the first part of given file, by default it prints first 10 lines
-  * head -<line> <filename>  
+  * head -line filename  
   Print number of line from filename.  
-  * head -c<line> <filename>  
+  * head -c-line filename  
   Print number of line character from filename.  
 * **tail** - Prints the last part of given file, by default it prints last 10 lines 
-  * tail -<noline> <filename>
+  * tail -line filename  
   Print number of line from filename from end of file. 
-  * tail -c<line> <filename>
+  * tail -c-line filename  
   Print number of line character from filename from end of file.  
 * **du** - Display the file/directory space usage
 
