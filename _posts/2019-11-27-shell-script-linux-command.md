@@ -25,6 +25,9 @@ Set of common useful linux command with basic description and usage.
 * **touch** - Updates timestamp of the file and create empty file
   * touch filename  
   If filename is existing file then it updates the last modified timestamp to current timestamp, in case filename does not exist then it creates empty file.  
+* **vi** - Open file in read only mode, if file does not exist then creates new one.
+  * vi <file name>  
+  Open file in read only mode, use i to enter into edit mode, use esc :wq to save the change, use esc :q to quit the file without saving it. To search anything in file use vi <file name> then press / and type search keyword, to search for next occurence use n keyword.  
 * **man** - Displays manual pages
   * man <command>  
   Display the manual pages of command.  
