@@ -174,3 +174,14 @@ tar -zcvf out_file.tar.gz --remove-files out_file
 ```shell
 find $fpath -type f -exec grep -H -i "$search" {} \;|awk -F ':' '{print $1}'|sort
 ```
+* Remove duplicate lines from a file and save it in new file
+```shell
+sort <file name> | uniq > <new file name>
+```
+-u forces to check for strict ordering.  
+```shell
+sort <file name> | uniq -u > <new file name>
+```
+```shell
+uniq <file name> <output file name>
+```
