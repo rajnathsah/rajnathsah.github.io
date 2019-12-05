@@ -171,7 +171,7 @@ tar -czvf <zip filename>.tar.gz <file name>
 ```
 * Archive content of a directory and remove files
 ```shell
-tar -zcvf out_file.tar.gz --remove-files out_file
+tar -czvf out_file.tar.gz --remove-files out_file
 ```
 * Search given text in all files in a given path and prints it
 ```shell
