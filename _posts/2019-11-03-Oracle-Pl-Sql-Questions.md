@@ -111,3 +111,27 @@ echo "System date - $val"
 val=`echo "execute  proc_hello_world;" | sqlplus <db username>/<db password>@<service name> | tail -5 | head -n1`
 echo "$val"
 ```
+
+##### 15. What is materialized view and how it helps in query optimization?
+Materialized view in Oracle database is an object that contains the results of a query. They are local copies of data located remotely or aggregate data of queries.  
+```sql
+CREATE MATERIALIZED VIEW view-name
+BUILD [IMMEDIATE | DEFERRED]
+REFRESH [FAST | COMPLETE | FORCE ]
+ON [COMMIT | DEMAND ]
+[[ENABLE | DISABLE] QUERY REWRITE]
+AS
+SELECT ...;
+```
+* IMMEDIATE: View is populated immediately.
+* DEFERRED: View is populated on first requested refresh.
+* FAST: Fast refresh is attempted, in case materialized view logs are not present against source table in advance, fast refresh will fail.
+* COMPLETE: View is truncated and re-popolated completely using associated query.
+* FORCE: Fast refresh of view is attempted, if not possible then complete refresh is performed.
+* COMMIT: Refresh is triggered by commiting data change on source table.
+* DEMAND: Refresh is triggered by manual or scheduled request.
+* QUERY REWRITE: It is a hint for optimizer if materialized view should be considered for query re-write operations.
+* Populating materialized view add loads on the server involved, it should be noted while using it.
+* Materialized view logs help in fast refresh but increases DML time on source table.
+* Missing regular refresh increases the size of log table.
+* Verify QUERY_REWRITE_INTEGRITY and QUERY_REWRITE_ENABLED parameter to confirm before using QUERY REWRITE option.
