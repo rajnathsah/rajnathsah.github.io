@@ -145,3 +145,6 @@ Hints let us make decisions which are made by the oracle optimizer. Syntax to en
 /*+ hint(view_name.table_in_view) */
 ```
 * Note: Hints should be used with caution in production system.
+
+##### 18. What is index?
+An index is a method of allowing faster retrieval of records. An index creates an entry for each value that appears in the indexed columns. By default, Oracle creates B-tree indexes. For more details, please refer [index](https://github.com/rajnathsah/PerformanceTuning_Oracle/blob/master/Index.md) article.
