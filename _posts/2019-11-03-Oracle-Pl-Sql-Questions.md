@@ -135,3 +135,6 @@ SELECT ...;
 * Materialized view logs help in fast refresh but increases DML time on source table.
 * Missing regular refresh increases the size of log table.
 * Verify QUERY_REWRITE_INTEGRITY and QUERY_REWRITE_ENABLED parameter to confirm before using QUERY REWRITE option.
+
+##### 16. How to process large set of data using forall without fail?
+Using SAVE EXCEPTIONS option, all exception raised during forall processing can be saved. For more details with example, Please refer [bulk data processing](https://github.com/rajnathsah/PerformanceTuning_Oracle/blob/master/Bulk%20Data%20Processing.md) article.
