@@ -25,10 +25,16 @@ Above tools helps in identifying the area which has issues. It is good to have s
 # What next?
 * Understanding of requirement is first, once you know the requirement, find out the approach to get the requirement done. This will help you to have an idea for getting the problem solved. 
 * Look at the code piece which is causing issues. Scan and see if it is following the good coding practice. Code which is written based on standard pratice, makes it more readable and can be easily debug.
-* Look at the joins used in query, pay attention to **outer joins**.
+* Look at the joins used in query and pay attention to **outer joins**.
 * Look at the columns used for data filter, run the explain plan and see the table access method.
 * Look at the amount of data returned by table filter and based on that verify indexes, in case indexes are not used for fetching data, find the reason. Oracle optimizer decides on the usage of indexes based on multiple factor like table statistics, database settings and amount of data fetched based on filter.
 * In a complex query, look at the subquery part, if it is getting repeated multiple times then find a ways to avoid it.
 * In case query usage function then look the function behaviour and logic.
+* In case query is big then look at the options of diving it in managable pieces.
+* Use hints as last option only.
+* Don't use something just because it is present in technology. Collection and bulk collect is handy for processing large data but plane sql are always better.
+* Avoid context switching. Oracle has given multiple options to reduce it, use those options.
+* Look at the sub queries generating lot of data, it can cause performance issue in cases where data fetched by sub queries are bigger than PGA.
+* Don't use minus, distinct and union in query. These are performance killer.
 
 For more details, Please refer the github repo [link](https://github.com/rajnathsah/PerformanceTuning_Oracle). 
