@@ -148,3 +148,6 @@ Hints let us make decisions which are made by the oracle optimizer. Syntax to en
 
 ##### 18. What is index?
 An index is a method of allowing faster retrieval of records. An index creates an entry for each value that appears in the indexed columns. By default, Oracle creates B-tree indexes. For more details, please refer [index](https://github.com/rajnathsah/PerformanceTuning_Oracle/blob/master/Index.md) article.
+
+##### 19. What is partitioning?
+Method to break a very large table and/or its associated indexes into smaller and manageable pieces. In another words partitioning allows tables, indexes, and index-organized tables to be subdivided into smaller pieces, enabling these database objects to be managed and accessed at a smaller level. For more details, please refer [partitioning](https://github.com/rajnathsah/PerformanceTuning_Oracle/blob/master/Partitioning.md) article.
