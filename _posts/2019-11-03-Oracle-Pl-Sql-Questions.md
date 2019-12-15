@@ -138,3 +138,10 @@ SELECT ...;
 
 ##### 16. How to process large set of data using forall without fail?
 Using SAVE EXCEPTIONS option, all exception raised during forall processing can be saved. For more details with example, Please refer [bulk data processing](https://github.com/rajnathsah/PerformanceTuning_Oracle/blob/master/Bulk%20Data%20Processing.md) article.
+
+##### 17. What is hints in oracle and how to use it?
+Hints let us make decisions which are made by the oracle optimizer. Syntax to enable hints is below.  
+```sql
+/*+ hint(view_name.table_in_view) */
+```
+* Note: Hints should be used with caution in production system.
