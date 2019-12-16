@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Performance Tuning!"
-date: 2019-10-31 00:00:00 +0000
+date: 2019-12-16 00:00:00 +0000
 description: Oracle sql and pl/sql performance tuning tips and techniques. # Add post description (optional)
 img:  # Add image post (optional)
 tags: [Performance Tuning, Query Tuning]
