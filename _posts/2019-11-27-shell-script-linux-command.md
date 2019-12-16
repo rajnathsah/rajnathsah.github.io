@@ -3,7 +3,7 @@ layout: post
 title: "Useful Linux command and Shell script sniplets"
 date: 2019-11-27 00:00:00 +0000
 description: Useful linux command and shell script. # Add post description (optional)
-img:  # Add image post (optional)
+img: linux.png # Add image post (optional)
 tags: [Shell Script, Linux command]
 ---
 # Useful linux command
