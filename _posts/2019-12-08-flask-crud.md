@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Flask Restful Api
+title: Flask CRUD
 date: 2019-12-08 00:00:00 +0000
 description: Flask CRUD with sample code
-img: # Add image post (optional)
+img: flask.png # Add image post (optional)
 tags: [Flask, Python] # add tag
 ---
 # Flask CRUD Demo Application
