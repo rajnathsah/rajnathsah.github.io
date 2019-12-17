@@ -58,3 +58,39 @@ if ( b not in list ):
 else:
 	print('b is available in given list')
 ```
+
+##### 5. Command to get all keys from the dictionary.
+```python
+mydict = {1:'Raj',2:'Som'}
+print(mydict.keys())
+```
+
+##### 6. What is monkey patching?
+Monkey patching means adding a new variable or method to a class or module after it's been defined.  
+Example: We define a class A as
+```python
+class A(object):
+    def __init__(self, num):
+        self.num = num
+
+    def __add__(self, other):
+        return A(self.num + other.num)
+```
+But now we want to add another function later in the code like below.
+```python
+def get_num(self):
+    return self.num	
+```
+To do this as method of class A at runtime, we assign the function to class like below.  
+```python
+A.get_num = get_num
+```
+At runtime, assign the new method and use new methos like below.
+```python
+foo = A(42)
+A.get_num = get_num
+bar = A(6);
+foo.get_num() # 42
+bar.get_num() # 6
+```
+
