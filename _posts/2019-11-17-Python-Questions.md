@@ -125,3 +125,31 @@ formal arg: 1
 another keyword arg: myarg2: two
 another keyword arg: myarg3: 3
 ```
+
+##### 8. What is Iterables in python?
+When you create a list, you can read its items one by one. Reading its items one by one is called iteration:  
+```python
+mylist = [1, 2, 3]
+for i in mylist:
+	print(i)
+```
+Output
+```python
+1
+2
+3
+```
+mylist is an iterable. When you use a list comprehension, you create a list, and so an iterable:  
+```python
+mylist = [x*x for x in range(3)]
+for i in mylist:
+	print(i)
+```
+Output
+```python
+0
+1
+4
+```
+##### 9. What is Generators in python?
+##### 10. What does the "yield" keyword do?
