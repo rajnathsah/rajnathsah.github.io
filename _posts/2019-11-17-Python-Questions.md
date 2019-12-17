@@ -95,4 +95,33 @@ bar.get_num() # 6
 ```
 
 ##### 7. What are *args and \**kwargs?
-The special syntax, *args and \**kwargs in function definitions is used to pass a variable number of arguments to a function. The single asterisk form (*args) is used to pass a non-keyworded, variable-length argument list, and the double asterisk form is used to pass a keyworded, variable-length argument list. 
+The special syntax, *args and \**kwargs in function definitions is used to pass a variable number of arguments to a function. The single asterisk form (*args) is used to pass a non-keyworded, variable-length argument list, and the double asterisk form is used to pass a keyworded, variable-length argument list.  
+*args example :  
+```python
+def test_var_args(farg, *args):
+    print('formal arg:{}'.format(farg))
+    for arg in args:
+        print('another arg:{}'.format(arg)
+
+test_var_args(1, "two", 3)
+```
+Output
+```python
+formal arg: 1
+another arg: two
+another arg: 3
+```
+\**kwargs example
+```python
+def test_var_kwargs(farg, **kwargs):
+    print('formal arg:{}'.format(farg))
+    for key in kwargs:
+        print('another keyword arg: {}: {}'.format(key, kwargs[key]))
+
+test_var_kwargs(farg=1, myarg2="two", myarg3=3)
+```
+```python
+formal arg: 1
+another keyword arg: myarg2: two
+another keyword arg: myarg3: 3
+```
