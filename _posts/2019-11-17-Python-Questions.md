@@ -31,3 +31,30 @@ mylist=[1,2,3,'4','sample']
 ```python
 mydict = {1:'Python'}
 ```
+
+##### 3. How to read 10 characters from a file?
+```python
+f = open('<file name>','r')
+print(f.read(10))
+```
+
+##### 4. What are membership operators in Python? Write an example to explain both.
+There are 2 types of membership operators in Python:  
+in: If the value is found in a sequence, then the result becomes true else false  
+not in: If the value is not found in a sequence, then the result becomes true else false  
+```python
+a=15
+b=30
+list = [3,6,15,20,25]
+
+if (a in list):
+	print('a is available in given list')
+else:
+	print('a is not available in given list')
+
+ 
+if ( b not in list ):
+	print('b is not available in given list')
+else:
+	print('b is available in given list')
+```
