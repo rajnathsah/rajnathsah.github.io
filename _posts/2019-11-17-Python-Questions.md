@@ -197,4 +197,78 @@ This is a simple example, but it's handy when you know your function will return
 
 The first time the for calls the generator object created from your function, it will run the code in your function from the beginning until it hits yield, then it'll return the first value of the loop. Then, each other call will run the loop you have written in the function one more time, and return the next value until there is no value to return.
 
-The generator is considered empty once the function runs, but does not hit yield anymore. It can be because the loop had come to an end, or because you do not satisfy an "if/else" anymore.
+The generator is considered empty once the function runs, but does not hit yield anymore. It can be because the loop had come to an end, or because you do not satisfy an "if/else" anymore.  
+
+##### 11. What is class in Python?
+Like any other language classes in Python are also a piece of code that descibe how to produce an object. That is true for python as well.
+```python
+class ObjectCreator(object):
+  pass
+
+my_object = ObjectCreator()
+print(my_object)
+```
+Output
+```python
+<__main__.ObjectCreator object at 0x7f3d86c186d0>
+```
+But classes are more than that in Python. Classes are objects too.
+As soon as you use the keyword class, Python executes it and creates an OBJECT. The instruction
+```python
+class ObjectCreator(object):
+  pass
+```
+creates in memory an object with the name "ObjectCreator".  
+**This object (the class) is itself capable of creating objects (the instances), and this is why it's a class.**
+But still, it's an object, and therefore:  
+* you can assign it to a variable
+* you can copy it
+* you can add attributes to it
+* you can pass it as a function parameter  
+Example:  
+```python
+class ObjectCreator(object):
+  pass
+
+# you can print a class because it's an object
+print(ObjectCreator) 
+
+def echo(o):
+  print(o)
+
+# you can pass a class as a parameter
+echo(ObjectCreator) 
+
+print(hasattr(ObjectCreator, 'new_attribute'))
+
+# you can add attributes to a class
+ObjectCreator.new_attribute = 'foo'
+
+print(hasattr(ObjectCreator, 'new_attribute'))
+
+print(ObjectCreator.new_attribute)
+
+# you can assign a class to a variable
+ObjectCreatorMirror = ObjectCreator 
+print(ObjectCreatorMirror.new_attribute)
+
+print(ObjectCreatorMirror())
+```
+Output
+```python
+<class '__main__.ObjectCreator'>
+<class '__main__.ObjectCreator'>
+False
+True
+foo
+foo
+<__main__.ObjectCreator object at 0x7f455006b810>
+```
+Since classes are objects, you can create them on the fly, like any object. But it's not so dynamic, since you still have to write the whole class yourself. For more details, Please refer [link](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python/6581949#6581949).  
+
+##### 12. What are metaclasses in Python?
+Metaclasses are the 'stuff' that creates classes, i.e. metaclasses are what create these objects. They are the classes' classes, you can picture them this way:  
+```python
+MyClass = MetaClass()
+my_object = MyClass()
+```
