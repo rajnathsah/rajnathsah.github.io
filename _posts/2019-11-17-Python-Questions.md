@@ -332,4 +332,87 @@ z = merge_two_dicts(x, y)
 ```
 For dictionaries x and y, z becomes a shallowly merged dictionary with values from y replacing those from x.
 
-##### 14. 
+##### 14. How to print without new line?
+```python
+print('.', end='')
+```
+
+##### 15. What is Decorators in Python?
+Decorators are functions which modify the functionality of other functions. In another word decorators wrap a function, modifying its behavior. Let us start with simple example:  
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+def say_whee():
+    print("Whee!")
+
+say_whee = my_decorator(say_whee)
+
+say_whee()
+```
+Output
+```python
+Something is happening before the function is called.
+Whee!
+Something is happening after the function is called.
+```
+In the above code, decoration happened at line. 
+```python
+say_whee = my_decorator(say_whee)
+```
+The way you decorated say_whee() above is a little clunky.Python allows you to use decorators in a simpler way with the @ symbol.  
+Same code can be re-written.
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_whee():
+    print("Whee!")
+```
+Output
+```python
+Something is happening before the function is called.
+Whee!
+Something is happening after the function is called.
+```
+For more details, Please refer the [link](https://realpython.com/primer-on-python-decorators/#simple-decorators).
+
+##### 16. What does if __name__ == "__main__": do in Python?
+Whenever the Python interpreter reads a source file, it does two things:  
+* it sets a few special variables like __name__, and then
+* it executes all of the code found in the file.
+For detailed explaination, please refer [link](https://stackoverflow.com/questions/419163/what-does-if-name-main-do/419185#419185)
+
+##### 17. What is the meaning of a single and a double underscore before an object name?
+* Single Underscore  
+Names, in a class, with a leading underscore are simply to indicate to other programmers that the attribute or method is intended to be private.  
+* Double Underscore  
+Any identifier of the form \__spam (at least two leading underscores, at most one trailing underscore) is textually replaced with _classname__spam, where classname is the current class name with leading underscore(s) stripped. This mangling is done without regard to the syntactic position of the identifier, so it can be used to define class-private instance and class variables, methods, variables stored in globals, and even variables stored in instances. private to this class on instances of other classes.  
+Example:
+```python
+>>> class MyClass():
+...     def __init__(self):
+...             self.__superprivate = "Hello"
+...             self._semiprivate = ", world!"
+...
+>>> mc = MyClass()
+>>> print mc.__superprivate
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: myClass instance has no attribute '__superprivate'
+>>> print mc._semiprivate
+, world!
+>>> print mc.__dict__
+{'_MyClass__superprivate': 'Hello', '_semiprivate': ', world!'}
+```
+
+##### 18.
