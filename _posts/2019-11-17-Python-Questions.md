@@ -316,3 +316,20 @@ You write class Foo(object) first, but the class object Foo is not created in me
 Python will look for **metaclass** in the class definition. If it finds it, it will use it to create the object class Foo. If it doesn't, it will use type to create the class.  
 For detail explaination please refer stackoverflow [link](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python/6581949#6581949).
 
+##### 13. How to merge two dictionaries in single expression?
+In Python 3.5 and above to mearge two dictionaries x and y below syntax is used.
+```python
+z = {**x, **y}
+```
+In Python 2, (or 3.4 or lower) write a function:
+```python
+def merge_two_dicts(x, y):
+    z = x.copy()   # start with x's keys and values
+    z.update(y)    # modifies z with y's keys and values & returns None
+    return z
+    
+z = merge_two_dicts(x, y)   
+```
+For dictionaries x and y, z becomes a shallowly merged dictionary with values from y replacing those from x.
+
+##### 14. 
