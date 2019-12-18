@@ -267,8 +267,52 @@ foo
 Since classes are objects, you can create them on the fly, like any object. But it's not so dynamic, since you still have to write the whole class yourself. For more details, Please refer [link](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python/6581949#6581949).  
 
 ##### 12. What are metaclasses in Python?
-Metaclasses are the 'stuff' that creates classes, i.e. metaclasses are what create these objects. They are the classes' classes, you can picture them this way:  
+Metaclasses are the 'stuff' that creates classes, i.e. metaclasses are what create these objects. They are the classes' classes.
 ```python
 MyClass = MetaClass()
 my_object = MyClass()
 ```
+type is the metaclass Python uses to create all classes behind the scenes.  
+Everything is an object in Python. That includes ints, strings, functions and classes. All of them are objects. And all of them have been created from a class:  
+```python
+>>> age = 35
+>>> age.__class__
+<type 'int'>
+>>> name = 'bob'
+>>> name.__class__
+<type 'str'>
+>>> def foo(): pass
+>>> foo.__class__
+<type 'function'>
+>>> class Bar(object): pass
+>>> b = Bar()
+>>> b.__class__
+<class '__main__.Bar'>
+```
+Now, what is the __class__ of any __class__ ?
+```python
+>>> age.__class__.__class__
+<type 'type'>
+>>> name.__class__.__class__
+<type 'type'>
+>>> foo.__class__.__class__
+<type 'type'>
+>>> b.__class__.__class__
+<type 'type'>
+```
+type is the built-in metaclass Python uses, but there is a way to create own metaclasses by defining metaclass attribute.  
+Python 2 syntax for creating metaclass:
+```python
+class Foo(object):
+    __metaclass__ = something...
+    [...]
+```
+Python 3 syntax for creating metaclass:  
+```python
+class Foo(object, metaclass=something):
+    ...    
+```
+You write class Foo(object) first, but the class object Foo is not created in memory yet.  
+Python will look for **metaclass** in the class definition. If it finds it, it will use it to create the object class Foo. If it doesn't, it will use type to create the class.  
+For detail explaination please refer stackoverflow [link](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python/6581949#6581949).
+
