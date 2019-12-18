@@ -170,3 +170,31 @@ Output
 It is just the same except you used () instead of []. BUT, you cannot perform for i in mygenerator a second time since generators can only be used once: they calculate 0, then forget about it and calculate 1, and end calculating 4, one by one.  
 
 ##### 10. What does the "yield" keyword do?
+yield is a keyword that is used like return, except the function will return a generator.  
+Example:  
+```python
+def createGenerator():
+  mylist = range(3)
+  for i in mylist:
+    yield i*i
+
+# create a generator
+mygenerator = createGenerator()
+# print generator object
+print(mygenerator)
+# print value
+for i in mygenerator:
+  print(i)
+```
+Output
+```python
+0
+1
+4
+```
+
+This is a simple example, but it's handy when you know your function will return a huge set of values that you will only need to read once. To master yield, you must understand that when you call the function, the code you have written in the function body does not run. The function only returns the generator object. Then, your code will continue from where it left off each time for uses the generator.
+
+The first time the for calls the generator object created from your function, it will run the code in your function from the beginning until it hits yield, then it'll return the first value of the loop. Then, each other call will run the loop you have written in the function one more time, and return the next value until there is no value to return.
+
+The generator is considered empty once the function runs, but does not hit yield anymore. It can be because the loop had come to an end, or because you do not satisfy an "if/else" anymore.
