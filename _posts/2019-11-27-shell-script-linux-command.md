@@ -233,3 +233,11 @@ do
    echo "$var"
 done
 ```
+
+5. How to get last argument passed to a shell script?
+Using for loop where it keeps last value.
+```shell
+#!/bin/bash
+for last; do true; done
+echo $last
+```
