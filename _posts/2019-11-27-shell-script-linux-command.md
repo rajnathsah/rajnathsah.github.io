@@ -225,6 +225,7 @@ It can be checked using below command:
 ```
 
 4. How to iterate over argument value passed to shell script?
+Use "$@" to represent all arguments:
 ```shell
 #!/bin/bash
 for var in "$@"
