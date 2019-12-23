@@ -200,3 +200,12 @@ sort <file name> | uniq -u > <new file name>
 #-u forces to check for strict ordering
 uniq <file name> <output file name>
 ```
+
+# Question and Answer
+1. How to execute another shell script from a shell script?  
+* source /path/to/script or . /path/to/script
+This option executes the another shell script in same process and all the variables made available in prior script is also available for the script being executed.  
+* /bin/bash /path/to/script or ./path/to/script
+This option executes the shell script in new process and so variables made available in prior script are not available.  
+
+2. 
