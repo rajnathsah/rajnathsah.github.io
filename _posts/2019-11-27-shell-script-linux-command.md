@@ -218,4 +218,8 @@ set -o pipefail
 set -e : This works for all simple command.  
 set -o pipefail : This work when pipe command are used.  
 
-3.
+3. How to check if particular environment variable is set?
+It can be checked using below command:
+```shell
+: "${<Environment Variable>:?Need to set <Environment Variable> non-empty}"
+```
