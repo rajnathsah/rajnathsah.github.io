@@ -223,3 +223,12 @@ It can be checked using below command:
 ```shell
 : "${<Environment Variable>:?Need to set <Environment Variable> non-empty}"
 ```
+
+4. How to iterate over argument value passed to shell script?
+```shell
+#!/bin/bash
+for var in "$@"
+do
+   echo "$var"
+done
+```
