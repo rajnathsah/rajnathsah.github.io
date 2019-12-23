@@ -150,9 +150,25 @@ Set of useful shell script sniplets which are handy in day to work as database d
 ```shell
 #!/bin/bash
 dir='sample_dir'
-if [ -d "$dir" -a ! -h "$dir" ]
+if [ -d "$dir" ]
 then
    echo "$dir found"
+else
+   echo "Error: $dir not found."
+fi
+```
+Above command will fail if directory is a symbolic link. It can be handled differently using below option.
+```shell
+#!/bin/bash
+dir='sample_dir'
+if [ -d "$dir" ]
+then
+ if [ -L "$dir" ]
+ then
+   echo "$dir is symbolic link"
+ else
+   echo "$dir found"
+ fi
 else
    echo "Error: $dir not found."
 fi
