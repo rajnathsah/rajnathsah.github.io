@@ -208,4 +208,14 @@ This option executes the another shell script in same process and all the variab
 * /bin/bash /path/to/script or ./path/to/script
 This option executes the shell script in new process and so variables made available in prior script are not available.  
 
-2. 
+2. How to abort a shell script if any command returns a non zero value?
+Use set command at begining of script
+```shell
+#!/bin/bash
+set -e 
+set -o pipefail
+```
+set -e : This works for all simple command.  
+set -o pipefail : This work when pipe command are used.  
+
+3.
