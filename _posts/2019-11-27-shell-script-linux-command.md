@@ -73,6 +73,11 @@ Set of common useful linux command with basic description and usage.
   List current running processes by logged in user.
   * ps -ef  
   List all running processes on system in full format.  
+* **top** - Show real time processes  
+* **kill** - Kill process with id pid  
+  * kill pid Kill process with id pid  
+  * pkill name Kill process with name name  
+  * killall name Kill all processes with names beginning name  
 * **scp** - Copies files between servers in secure way.
   * scp username@from_host:file.txt /local/directory/  
   Copy file from a remote host to local host.  
