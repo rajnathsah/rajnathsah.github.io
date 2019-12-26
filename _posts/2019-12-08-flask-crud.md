@@ -17,14 +17,14 @@ For developing this application, i have used pycharm ide, but it is not necessar
 After completion of this application, you will have understanding of flask, jinja template, sqlalchemy, login, validation and blueprint.
 
 Let us start the development by creating the directory structure as follow
-CrudFlask/
-          instance/
-          app/
-            admin/
-            auth/
-            home/
-            static/
-            templates/
+CrudFlask/  
+          instance/  
+          app/  
+            admin/  
+            auth/  
+            home/  
+            static/  
+            templates/  
 
 
 Happy learning.
