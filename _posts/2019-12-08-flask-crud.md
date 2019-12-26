@@ -27,6 +27,6 @@ For this project i have used postgrace as database but you can configure any dat
 Follow the official [postgresql](https://www.postgresql.org/download/) documentation and install it. Post installation create a database and user which will be used for this app.  
 
 * App setup  
-New we create the directory structure as per the app git repo directory structre and follow along. 
+Lets start with creating the directory structure as per the app git repo directory structre and follow along. 
 
 Happy learning.
