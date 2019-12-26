@@ -19,8 +19,9 @@ After completion of this application, you will have understanding of flask, jinj
 let us start with by setting database for our app and then test connection.  
 For this project i have used postgrace as database but you can configure any database which is supported by sqlalchemy as we will be using sqlalchemy for our database operation. Sqlalchemy gives use freedom from writing database specific queries. It also makes project portable to different backend with minimal changes. Please refer [sqlalchemy](https://www.sqlalchemy.org/) documentaion and [flask sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/) for more details about it.  
 
-Download pgsql and setup
+Download pgsql and setup:  
+Follow the official [postgresql](https://www.postgresql.org/download/) documentation and install it. Post installation create a database and user which will be used for this app.  
 
-Let us start the development by creating the directory structure as per the app git repo. 
+New we create the directory structure as per the app git repo directory structre and follow along. 
 
 Happy learning.
