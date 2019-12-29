@@ -23,9 +23,9 @@ analytics: http://bit.ly/34cRtiO
 
 # Build Settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+#kramdown:
+#  input: GFM
+#  syntax_highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
