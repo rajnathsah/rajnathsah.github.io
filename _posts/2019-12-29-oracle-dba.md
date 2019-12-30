@@ -13,6 +13,22 @@ Schema can be exported using expdp command.
 ```sql
 expdp system/manager@orcl schemas=SCOTT directory=DATA_PUMP_DIR dumpfile=SCOTT.dmp logfile=expdpSCOTT.log
 ```
-For detailed step, Please refer [export backup](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/dbascript/backup.md).  
+For detailed step, Please refer [export backup](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/dbascript/backup.md).
+
+2. How to take database backup using RMAN?
+Login to rman and run backup command.
+```sql
+$rman
+RMAN> CONNECT TARGET /
+RMAN> BACKUP AS BACKUPSET DATABASE
+```
+For more detailed step, Please refer [rman backup](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/dbascript/rman_backup_recovery.md)
+
+3. How to restore database from rman backup?
+Run restore command from rman prompt
+```sql
+RMAN> RESTORE DATABASE;
+```
+For more detailed step, Please refer [rman recovery](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/dbascript/rman_backup_recovery.md#rman-recovery)
 
 Happy learning.
