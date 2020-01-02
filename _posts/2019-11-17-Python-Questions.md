@@ -415,4 +415,16 @@ AttributeError: myClass instance has no attribute '__superprivate'
 {'_MyClass__superprivate': 'Hello', '_semiprivate': ', world!'}
 ```
 
-##### 18.
+##### 18. What is NumPy?
+NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more. For more details please refer [numpy](https://docs.scipy.org/doc/numpy/user/whatisnumpy.html).
+
+##### 19. What is pandas?
+pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python.  
+pandas is well suited for many different kinds of data:  
+* Tabular data with heterogeneously-typed columns, as in an SQL table or Excel spreadsheet
+* Ordered and unordered (not necessarily fixed-frequency) time series data.
+* Arbitrary matrix data (homogeneously typed or heterogeneous) with row and column labels
+* Any other form of observational / statistical data sets. The data actually need not be labeled at all to be placed into a pandas data structure  
+
+For getting started with basic pandas, Please refer [10 minutes to pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html)  
+
