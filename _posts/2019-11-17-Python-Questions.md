@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Q&A for Python interview
-date: 2019-11-17 00:00:00 +0000
+date: 2020-01-02 00:00:00 +0000
 description: Important questions for Python interview.
 img: python.png # Add image post (optional)
 tags: [Python]
@@ -442,4 +442,19 @@ Output:
    10 100
    11 110
    12 120
+```
+
+##### 21. How to handle large data files in pandas?
+Data files which does not fit into memory can be ready in chunk sizes. Pandas has option to define chunk size while reading the data file.
+* Option 1: Spefify chunksize to read_csv, doing so will return an iterable object of type TextFileReader
+```python
+reader = pd.read_csv('tmp.sv', sep='|', chunksize=4)
+
+for chunk in reader:
+	print(chunk)
+```
+* Option 2: Specify iterator=True to read_csv, it also return an iterable object of type TextFileReader.
+```sql
+reader = pd.read_csv('tmp.sv', sep='|', iterator=True)
+reader.get_chunk(5)
 ```
