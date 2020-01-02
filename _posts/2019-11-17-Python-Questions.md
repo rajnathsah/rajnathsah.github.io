@@ -428,3 +428,18 @@ pandas is well suited for many different kinds of data:
 
 For getting started with basic pandas, Please refer [10 minutes to pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html)  
 
+##### 20. How to iterate over pandas dataframe rows?
+Using DataFrame.iterrows (generator) which yields both index and row.
+```python
+import pandas as pd
+
+df = pd.DataFrame([{'c1':10, 'c2':100}, {'c1':11,'c2':110}, {'c1':12,'c2':120}])
+
+for index, row in df.iterrows():
+    print(row['c1'], row['c2'])
+
+Output: 
+   10 100
+   11 110
+   12 120
+```
