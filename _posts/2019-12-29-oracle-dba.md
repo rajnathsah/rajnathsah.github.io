@@ -15,7 +15,13 @@ expdp system/manager@orcl schemas=SCOTT directory=DATA_PUMP_DIR dumpfile=SCOTT.d
 ```
 For detailed step, Please refer [export backup](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/dbascript/backup.md).
 
-2. How to take database backup using RMAN?
+2. How to split export dump file size while taking export?  
+By defining filesize parameter and multiple dumpfile name. Dump file name can be multiple filenames seperated by comma or it can have something like test_dump%u.dmp to auto-gererate file name. In case you are providing file name manually and export is exceeding it, then export utility prompts at command prompt for the next file name.
+```sql
+expdp system/manager@orcl schemas=SCOTT directory=DATA_PUMP_DIR dumpfile=test_dump%u.dmp filesize=20m logfile=expdpSCOTT.log
+```
+
+3. How to take database backup using RMAN?
 Login to rman and run backup command.
 ```sql
 $rman
@@ -24,7 +30,7 @@ RMAN> BACKUP AS BACKUPSET DATABASE
 ```
 For more detailed step, Please refer [rman backup](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/dbascript/rman_backup_recovery.md)
 
-3. How to restore database from rman backup?
+4. How to restore database from rman backup?
 Run restore command from rman prompt
 ```sql
 RMAN> RESTORE DATABASE;
