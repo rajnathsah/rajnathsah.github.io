@@ -14,7 +14,7 @@ tags: [Performance Tuning, Query Tuning]
 
 # Start?
 Performance tuning can be done after indetifying the area which has issues. Oracle provides multiple tools to figure out the problematic areas.  
-* [Explain Plan](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Explain%20Plan%20and%20Statistics%20Help%20Document.doc)
+* [Explain Plan](https://github.com/rajnathsah/PerformanceTuning_Oracle/blob/master/Explain%20Plan.md)
 * [TKPROF](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/Trace_File_TKPROF.md)
 * [AWR Report](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/AWR_ASH.md)
 * [ASH Report](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/Notes/AWR_ASH.md)
