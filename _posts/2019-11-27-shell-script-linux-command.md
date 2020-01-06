@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Useful Linux command and Shell script sniplets"
-date: 2019-11-27 00:00:00 +0000
+date: 2020-01-06 00:00:00 +0000
 description: Useful linux command and shell script. # Add post description (optional)
 img:  # Add image post (optional)
 tags: [Shell Script, Linux command]
@@ -148,6 +148,8 @@ Set of common useful linux command with basic description and usage.
   * tail -c-line filename  
   Print number of line character from filename from end of file.  
 * **du** - Display the file/directory space usage
+  * du -sh *
+  Print size of the all directory and file inside the directory.
 
 # Useful shell script sniplets
 Set of useful shell script sniplets which are handy in day to work as database developer and admin.    
