@@ -37,4 +37,9 @@ RMAN> RESTORE DATABASE;
 ```
 For more detailed step, Please refer [rman recovery](https://github.com/rajnathsah/Oracle-Scripts-and-Notes/blob/master/dbascript/rman_backup_recovery.md#rman-recovery)
 
+5. What is Oracle Virtual Private Database?
+Oracle Virtual Private Database (VPD) enables you to create security policies to control database access at the row and column level. Essentially, Oracle Virtual Private Database adds a dynamic WHERE clause to a SQL statement that is issued against the table, view, or synonym to which an Oracle Virtual Private Database security policy was applied.  
+
+
+
 Happy learning.
