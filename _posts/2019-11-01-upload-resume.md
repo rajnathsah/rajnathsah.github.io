@@ -13,11 +13,11 @@ Updating profile daily increases the probablity of getting noticed by recruiters
 
 It is easy to configure and run. It can also be scheduled to run on personal computer.  
 
-Setup is very easy and can be done three steps:  
+Setup is very easy and can be done in three steps:  
 
 * Have updated chrome browser installed.
 * Download the [executable](https://github.com/rajnathsah/AutoResumeUpload/blob/master/OneClick/OneClick.exe) and place it in a folder.
-* Double click on OneClick.exe and your resume uploader is ready to upload on job portal.  
+* Double click on OneClick.exe and your resume uploader is ready to upload resume on job portal.  
 
 In this version, downloading chromedriver and config file creation is automated. It downloads latest chrome driver, generate config file and copy resume in current folder. On sub-sequent execution, it runs as usual and re-download chrome driver after 7 days. In case there is any update in configuration values, delete old config file and run the program again, it will prompt for config file generation. Password in config file are encrypted.  
 
