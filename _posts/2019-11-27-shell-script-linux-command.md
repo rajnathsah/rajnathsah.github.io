@@ -248,3 +248,14 @@ Using for loop where it keeps last value.
 for last; do true; done
 echo $last
 ```
+
+6. How to schedule a task in linux?
+Prepare a shell script and test it. Once it is finalized, schedule using cron. For scheduling cron job for specific user, edit the cron file using command.
+```shell
+crontab -e # for logged in user
+crontab -e -u oracle # for specific user
+```
+Example to run a cleanup script called "/root/weekly_cleanup.sh" at 01:00 each Sunday. Any output or errors from the script are redirected to the "/tmp/weekly_cleanup.log" file, to prevent a build up of mails to root.
+```shell
+0 1 * * 0 /root/weekly_cleanup.sh >> /tmp/weekly_cleanup.log 2>&1
+```
