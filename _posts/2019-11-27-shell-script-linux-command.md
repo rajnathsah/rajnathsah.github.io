@@ -249,7 +249,7 @@ for last; do true; done
 echo $last
 ```
 
-6. How to schedule a task in linux?
+6. How to schedule a task in linux?  
 Check if there is any cron job exist for user.  
 ```shell
 crontab –l
@@ -260,11 +260,11 @@ crontab -e # for logged in user
 crontab -e -u oracle # for specific user
 ```
 Format:  
-Seconds Minutes Hours Day_of_the_month Month Day_of_the_week Year <command/filename>
+Seconds Minutes Hours Day_of_the_month Month Day_of_the_week Year <command/filename>  
 Param details:  
 ![Cron Job]({{site.baseurl}}/assets/img/crontab_param.png)
 
-Example to run a cleanup script called "/root/weekly_cleanup.sh" at 01:00 each Sunday. Any output or errors from the script are redirected to the "/tmp/weekly_cleanup.log" file, to prevent a build up of mails to root.
+Example to run a cleanup script called "/root/weekly_cleanup.sh" at 01:00 each Sunday. Any output or errors from the script are redirected to the "/tmp/weekly_cleanup.log" file, to prevent a build up of mails to user.
 ```shell
 0 1 * * 0 /root/weekly_cleanup.sh >> /tmp/weekly_cleanup.log 2>&1
 ```
