@@ -13,7 +13,7 @@ Good linkedin profile is handy in job search and creating professional network. 
 Let us start with verifying chrome browser, In case it is not updated, update chrome browser to latest version.
 
 1. Download latest chromewebdriver from below link and place it in project folder.
-  *  [Chromewebdriver](https://chromedriver.chromium.org/)
+ *  [Chromewebdriver](https://chromedriver.chromium.org/)
 
 
 In progress.
