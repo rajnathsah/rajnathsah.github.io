@@ -15,7 +15,13 @@ Let us start with verifying chrome browser, In case it is not updated, update ch
 1. Download latest chromewebdriver from below link and place it in project folder and install other dependent python library.
     *  [Chromewebdriver](https://chromedriver.chromium.org/)
     *  [Selenium](https://www.seleniumhq.org/)
+      ```python
+      pip install selenium
+      ```
     *  [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+      ```python
+      pip install beautifulsoup4
+      ```
 
 
 In progress.
