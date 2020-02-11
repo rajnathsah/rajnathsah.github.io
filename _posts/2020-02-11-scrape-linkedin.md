@@ -12,8 +12,10 @@ Good linkedin profile is handy in job search and creating professional network. 
 
 Let us start with verifying chrome browser, In case it is not updated, update chrome browser to latest version.
 
-1. Download latest chromewebdriver from below link and place it in project folder.
+1. Download latest chromewebdriver from below link and place it in project folder and install other dependent python library.
     *  [Chromewebdriver](https://chromedriver.chromium.org/)
+    *  [Selenium](https://www.seleniumhq.org/)
+    *  [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 
 In progress.
