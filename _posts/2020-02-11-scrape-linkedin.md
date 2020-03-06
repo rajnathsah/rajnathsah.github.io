@@ -4,26 +4,14 @@ title: Scrape Linkedin post content
 date: 2020-02-11 00:00:00 +0000
 description: Scrape linkedin post
 img: # Add image post (optional)
-tags: [BeautifulSoup, Selenium, Scrapy, Python]
+tags: [BeautifulSoup, Selenium, Python]
 ---
 # Scrape linkedin.com post using Python
 
-Good linkedin profile is handy in job search and creating professional network. There is option to search job on linkedin, but often recruiters post job opening. In such cases simple linkedin job search will not fetch these details. But there is option to do content search to find such cases. I tried scraping content based on keyword using python, selenium and beautifulsoup.
+Linkedin is for professional networking. it is also used by employers for posting jobs. There are cases where recruiters post job on there page which can be searched as content. When i was searching job, i found many jobs were posted by recruiter as post. To search such job, one has to search content. I tried to automate the same by scraping the content using python, selenium and beautifulsoup.
 
-Let us start with verifying chrome browser, In case it is not updated, update chrome browser to latest version.
+Download the code from [github](https://github.com/rajnathsah/LinkedinJobScraping) repo. Install dependecies and run ScrapeLinkedin.py file from command prompt or terminal. It will automatically download latest chrome web driver and place it in current working directory and use it for scraping content. Feel free to download the code and try, let me know if there is any suggestion and feedback.
 
-1. Download latest chromewebdriver from below link and place it in project folder and install other dependent python library.
-    *  [Chromewebdriver](https://chromedriver.chromium.org/)
-    *  [Selenium](https://www.seleniumhq.org/)
-      ```python
-      pip install selenium
-      ```
-    *  [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-      ```python
-      pip install beautifulsoup4
-      ```
+For more details about the code, please refer github repo.  
 
-
-In progress.
-
-Happy learning.
+Happy learning and job hunting!
