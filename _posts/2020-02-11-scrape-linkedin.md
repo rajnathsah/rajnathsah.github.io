@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scrape Linkedin post content
+title: Scrape Linkedin Post Content
 date: 2020-03-06 00:00:00 +0000
 description: Scrape linkedin post
 img: # Add image post (optional)
