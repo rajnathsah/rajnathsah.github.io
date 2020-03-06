@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrape Linkedin post content
-date: 2020-02-11 00:00:00 +0000
+date: 2020-03-06 00:00:00 +0000
 description: Scrape linkedin post
 img: # Add image post (optional)
 tags: [BeautifulSoup, Selenium, Python]
