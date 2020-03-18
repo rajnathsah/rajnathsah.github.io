@@ -207,7 +207,11 @@ sort <file name> | uniq -u > <new file name>
 #-u forces to check for strict ordering
 uniq <file name> <output file name>
 ```
-
+* Total size of files with specific names or extension
+To check the size of all .txt file in current directory.
+```shell
+find . -type f -name "*.txt" -print0 | xargs -0r du -ch | tail -n1
+```
 # Question and Answer
 1. How to execute another shell script from a shell script?  
 * source /path/to/script or . /path/to/script
