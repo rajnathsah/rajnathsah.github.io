@@ -112,7 +112,7 @@ another arg: two
 another arg: 3
 ```
 \**kwargs example
-```python
+```python 
 def test_var_kwargs(farg, **kwargs):
     print('formal arg:{}'.format(farg))
     for key in kwargs:
