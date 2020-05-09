@@ -571,7 +571,7 @@ Package : Packages are way of structuring Python's module namespace by using "do
 ##### 25. How to declare global variable to used accross module?
 By defining variable in config.py file and importing it accross different modules.  
 
-##### 26. What is return type of range function?
+##### 26. What is the return type of range function?
 range function return a range object.
 ```python
 r = range(1,3)
