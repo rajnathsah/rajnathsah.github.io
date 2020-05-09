@@ -582,7 +582,7 @@ print(type(r))
 ```
 
 ##### 27. How to show all files recursively of a directory?
-Using os.walk, all directory, sub directory and files can be read.  
+Using os.walk, all directory, sub directory and files can be listed.  
 ```python
 import os
 
