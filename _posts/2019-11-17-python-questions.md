@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Q&A for Python interview
-date: 2020-01-02 00:00:00 +0000
+date: 2020-05-09 00:00:00 +0000
 description: Important questions for Python interview.
 img: python.png # Add image post (optional)
 tags: [Python]
