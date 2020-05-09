@@ -580,3 +580,15 @@ print(r)
 print(type(r))
 # print <class 'range'>
 ```
+
+##### 27. How to show all files recursively of a directory?
+Using os.walk, all directory, sub directory and files can be read.  
+```python
+import os
+
+rootdir = os.getcwd()
+
+for folder, subs, files in os.walk(rootdir):    
+    print(files)
+```
+
