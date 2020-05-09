@@ -21,7 +21,8 @@ For debugging purpose, pip displays some installation message on console. It als
 * Where you have to deal with values which can be changed, use List.
 ```python
 mylist=[1,2,3,'4','sample']
-```
+```  
+
 ###### Dictionary
 * Dictionary is an unordered collection of key-value pairs.
 * Dictionaries are used to handle large amount of data.
@@ -458,3 +459,92 @@ for chunk in reader:
 reader = pd.read_csv('tmp.sv', sep='|', iterator=True)
 reader.get_chunk(5)
 ```
+
+##### 22. What is intance, class and static method in python?
+Instance method: Method associated with instance, such method first parameter is self. It is used for handling instance related variables.  
+Class method: Method associate with class and declared by using classmethod decorator. It is used for handling class related variables.  
+Static method: Method that is part of class but not related to instance or class variable, it is declared using staticmethod decorator.  
+```python
+import datetime
+
+class Employee:
+
+    # class variable
+    num_of_emps = 0
+    raise_amt = 1.04
+    # instantiate employee class
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last        
+        self.pay = pay
+
+        Employee.num_of_emps += 1
+
+    # instance method
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
+
+    # instance method
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amt)
+    
+    # instance method
+    def apply_raise2(self, amt):
+        self.pay = int(self.pay * amt)
+
+    # class method
+    @classmethod
+    def set_raise_amt(cls, amount):
+        cls.raise_amt = amount
+
+    # class method
+    @classmethod
+    def from_string(cls, emp_str):
+        first, last, pay = emp_str.split('-')
+        return cls(first, last, pay)
+
+    # static method
+    @staticmethod
+    def is_workday(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        return True
+
+# create employee class instance with value
+emp_1 = Employee('Raj', 'Nath', 100)
+emp_2 = Employee('Som', 'Nath', 200)
+
+# print employee 1 name
+print(emp_1.fullname())
+print(emp_1.pay)
+# print employee 2 name
+print(emp_2.fullname())
+print(emp_2.pay)
+
+# raise employee 2 pay by 10% using instance method
+emp_2.apply_raise2(1.10)
+
+# print employee pay
+print(emp_1.pay)
+print(emp_2.pay)
+
+# set employee raise pay to 5% using class method
+Employee.set_raise_amt(1.05)
+
+print(Employee.raise_amt)
+print(emp_1.raise_amt)
+print(emp_2.raise_amt)
+
+emp_str_3 = 'Sonia-Dhawan-300'
+
+emp_3 = Employee.from_string(emp_str_3)
+
+print(emp_3.first)
+print(emp_3.pay)
+
+my_date = datetime.date(2016, 7, 11)
+
+print(Employee.is_workday(my_date))
+
+```
+
