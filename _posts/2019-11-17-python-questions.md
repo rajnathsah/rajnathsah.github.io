@@ -548,3 +548,18 @@ print(Employee.is_workday(my_date))
 
 ```
 
+##### 23. Difference between list and tuple?
+List is mutable, i.e. list can be modified after declaring it.  
+```python
+mylist =[1,2,3]
+print(mylist)
+# prints [1,2,3]
+mylist.append(4)
+print(mylist)
+# prints [1,2,3,4]
+```
+Tuple is immutable, i.e. tuple can not be modified after declaring it.
+```python
+mytuple = (1,2,3)
+print(mytuple)
+```
