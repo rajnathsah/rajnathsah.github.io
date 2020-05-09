@@ -563,3 +563,20 @@ Tuple is immutable, i.e. tuple can not be modified after declaring it.
 mytuple = (1,2,3)
 print(mytuple)
 ```
+
+##### 24. What is module and package in python?
+Module : File containing Python definition and statements. For more details refer [module](https://docs.python.org/3/tutorial/modules.html).  
+Package : Packages are way of structuring Python's module namespace by using "dotted module name". For more details refer [package](https://docs.python.org/3/tutorial/modules.html#packages).  
+
+##### 25. How to declare global variable to used accross module?
+By defining variable in config.py file and importing it accross different modules.  
+
+##### 26. What is return type of range function?
+range function return a range object.
+```python
+r = range(1,3)
+print(r)
+# print range(1, 4)
+print(type(r))
+# print <class 'range'>
+```
