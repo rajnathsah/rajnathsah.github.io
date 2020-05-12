@@ -639,3 +639,55 @@ reference copy: [1, 2, 3]
 reference copy: [1, 123, 3]
 original copy: [1, 123, 3]
 ```
+
+##### 29. How to perform operaton on list and tuple values?
+Operation can be performed on list and tuple, but it behaves differently when we try normally. In below example when multiplied by 2, it prints same list 2 times, which is not intended. In order to get intended result, try list comprehension or other option such map function.  
+```python
+# operation of list
+lst = [1,2,3,4] # list
+tpl = (1,2,3,4) # tuple
+
+lm = lambda x : x*2 # lambda function
+
+print('Original list: {}'.format(lst))
+print('After multiplication with 2: {}'.format(lst*2))
+print('Multiplication using list comprehension')
+print([i*2 for i in lst])
+print('Original list: {}'.format(lst))
+print('Multiplication using list comprehension with lmbda function')
+print([lm(x) for x in lst])
+for i in map(lm,lst):
+    print(i)
+
+# operation over tuple
+print('Original tuple: {}'.format(tpl))
+print('After muplication with 2: {}'.format(tpl*2))
+print('Multiplication using list comprehension')
+print([i*2 for i in tpl])
+print('Multiplication using list comprehension with lmbda function')
+for i in (lm(x) for x in tpl):
+    print(i)
+```
+Output
+```python
+Original list: [1, 2, 3, 4]
+After multiplication with 2: [1, 2, 3, 4, 1, 2, 3, 4]
+Multiplication using list comprehension
+[2, 4, 6, 8]
+Original list: [1, 2, 3, 4]
+Multiplication using list comprehension with lmbda function
+[2, 4, 6, 8]
+2
+4
+6
+8
+Original tuple: (1, 2, 3, 4)
+After muplication with 2: (1, 2, 3, 4, 1, 2, 3, 4)
+Multiplication using list comprehension
+[2, 4, 6, 8]
+Multiplication using list comprehension with lmbda function
+2
+4
+6
+8
+```
