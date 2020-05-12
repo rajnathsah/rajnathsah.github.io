@@ -592,3 +592,50 @@ for folder, subs, files in os.walk(rootdir):
     print(files)
 ```
 
+##### 28. What is deepcopy, shallow copy and reference copy?
+deep copy and shallow copy can be created using copy class method. Reference copy can be created by assign reference to another variable.  
+```python
+import copy
+
+lst = [1,2,3]
+
+print('List: {}'.format(lst))
+
+# deepcopy which will create another copy
+d_copy = copy.deepcopy(lst)
+print('New copy: {}'.format(d_copy))
+
+# any operation on this copy will not change original list
+d_copy[1] = 123
+print('After update (new_copy): {}'.format(d_copy))
+print('Original list: {}'.format(lst))
+
+#shallow copy
+s_copy = copy.copy(lst)
+print('After shallow copy: {}'.format(s_copy))
+
+# operation on this copy data will not change original
+s_copy.append(123)
+print('Shallo copy after update: {}'.format(s_copy))
+print('Original list : {}'.format(lst))
+
+# reference copy
+r_copy = lst
+print('reference copy: {}'.format(r_copy))
+r_copy[1]=123
+print('reference copy: {}'.format(r_copy))
+print('original copy: {}'.format(lst))
+```
+Output
+```python
+List: [1, 2, 3]
+New copy: [1, 2, 3]
+After update (new_copy): [1, 123, 3]
+Original list: [1, 2, 3]
+After shallow copy: [1, 2, 3]
+Shallo copy after update: [1, 2, 3, 123]
+Original list : [1, 2, 3]
+reference copy: [1, 2, 3]
+reference copy: [1, 123, 3]
+original copy: [1, 123, 3]
+```
