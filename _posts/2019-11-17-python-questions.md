@@ -691,3 +691,7 @@ Multiplication using list comprehension with lmbda function
 6
 8
 ```
+
+##### 30. How to make python script executable from anywhere in linux?
+Adding below line as first link in python script, makes it executable from anywhere.
+#!/usr/bin/env python3
