@@ -713,3 +713,15 @@ total_duration = len(list(set(output_list)))
 # Total time
 print(total_duration)
 ```
+
+##### 32. How to check if a string is palindrome?
+```python
+# Input data
+str1 = 'raR'
+
+if str1.lower() == str1[::-1].lower():
+    print('Palindrome.')
+else:
+    print('Not a Palindrome.')
+```
+
