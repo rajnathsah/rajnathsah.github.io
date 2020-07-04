@@ -695,3 +695,21 @@ Multiplication using list comprehension with lmbda function
 ##### 30. How to make python script executable from anywhere in linux?
 Adding below line as first link in python script, makes it executable from anywhere.  
 #!/usr/bin/env python3
+
+##### 31. How to calculate total unique duration given a list of tupple passed as input?
+Let us take a case of YouTube, a user logged in and started watching video and watched from 0-10 min, later logged in again and watched same video from 15-20 min and 18-25 min. In this case total duration of viewer is 10+6+8 = 24 min but if we remove the timing where user watched same content, then total duration would be 10+6+5 = 21 min.  
+```python
+# Input
+input_list = [(1, 10), (10,16)]
+
+# Output
+output_list = []
+for lst in input_list:
+    output_list = output_list + list(range(lst[0], lst[1]))
+
+# Total duration after removing duplicates
+total_duration = len(list(set(output_list)))
+
+# Total time
+print(total_duration)
+```
