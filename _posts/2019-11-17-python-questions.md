@@ -725,3 +725,51 @@ else:
     print('Not a Palindrome.')
 ```
 
+##### 33. What is context manager?
+Context manager is used to manage resources correctly. Using context manager one can eliminate the chances of keeping resources such a file and database connections opened when it is no longer needed. Although as programmer it is expected to write code, taking care of releasing resources once that is no longer needed. Using context manager, it can be automated and resources can be released automatically. Most common use of inbuilt context manager is the function to open file.  
+Let us understand with example by creating our own custom function for handling file.
+```python
+from contextlib import contextmanager
+
+
+@contextmanager
+def open_file(file_name, mode):
+    try:
+        f = open(file_name, mode)
+        yield f
+    finally:
+        f.close()
+
+
+with open_file('log_a.txt', 'w') as f:
+    f.append('Hello')
+    print(f.closed)
+
+print(f.closed)
+```
+On running above code sniplets, it will open file and write a word and print status of file as False (file is not closed) and then when code is out of context, it print status as True (file is closed).  
+
+There is another option of using classes.  
+```python
+class File():
+
+    def __init__(self, filename, mode):
+        self.filename = filename
+        self.mode = mode
+
+    def __enter__(self):
+        self.open_file = open(self.filename, self.mode)
+        return self.open_file
+
+    def __exit__(self, *args):
+        self.open_file.close()
+
+files = []
+for _ in range(10000):
+    with File('foo.txt', 'w') as infile:
+        infile.write('foo')
+        files.append(infile)
+print(f.closed)
+```
+Above also does same, when code is out of context, it print status of file as closed.  
+
