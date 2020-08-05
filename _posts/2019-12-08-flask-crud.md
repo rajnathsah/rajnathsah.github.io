@@ -1,9 +1,9 @@
 ---
-layout: post
 title: Flask CRUD
 date: 2019-12-08 00:00:00 +0000
 description: Flask CRUD with sample code
 img: flask.png # Add image post (optional)
+classes: wide
 tags: [Flask, Python] # add tag
 ---
 # Flask CRUD Demo Application

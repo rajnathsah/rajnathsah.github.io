@@ -1,9 +1,9 @@
 ---
-layout: post
 title: Scrape web using Scrapy FrameWork
 date: 2019-11-01 00:00:00 +0000
 description: Scrape naukri.com data using scrapy framework
 img: # Add image post (optional)
+classes: wide
 tags: [Scrapy,Python]
 ---
 # Scrape [Naukri.com](www.naukri.com) job using Scrapy

@@ -1,9 +1,9 @@
 ---
-layout: post
 title: Oracle Database Administration Topics
 date: 2019-12-29 00:00:00 +0000
 description: Useful points related to Oracle Database Administration
 img: # Add image post (optional)
+classes: wide
 tags: [Oracle, Database, DBA] # add tag
 ---
 # Useful points related to Oracle Database Administration

@@ -1,9 +1,9 @@
 ---
-layout: post
 title: Oracle Sql and Pl/Sql topics as Q&A
 date: 2019-11-03 00:00:00 +0000
 description: Oracle Sql and Pl/Sql concepts with question and answer for interview preperation
 img: # Add image post (optional)
+classes: wide
 tags: [Oracle, SQL, PL/SQL]
 ---
 Important topics in Q&A format is based on my experience. Feel free to update me in case of any observation or you want to add anything. This post is specific to technical concepts.

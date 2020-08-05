@@ -1,9 +1,9 @@
 ---
-layout: post
 title: Flask Restful Api
 date: 2019-11-01 00:00:00 +0000
 description: Flask Restful Api example with sample code
 img: # Add image post (optional)
+classes: wide
 tags: [Flask, RestfulApi, Python] # add tag
 ---
 # Flask Restful Api

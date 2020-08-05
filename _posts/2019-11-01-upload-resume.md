@@ -1,10 +1,10 @@
 ---
-layout: post
 title: OneClick Resume Uploader
 date: 2020-01-23 00:00:00 +0000
 description: Automation of resume upload using python and selenium
 img: OneClickUpload.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
+classes: wide
 tags: [Automation, OneClick, Python, Selenium]
 ---
 # OneClick Resume Uploader
