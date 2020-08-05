@@ -20,8 +20,8 @@ title                    : "Home"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Raj Nath Sah"
-description              : "Place to share and discuss my experience."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Technology, tutorial, experience, mistakes and learnings."
+url                      : "https://rajnathsah.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -117,6 +117,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:      
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url:  "https://www.linkedin.com/in/rajnathsah/"
 
 # Site Footer
 footer:
