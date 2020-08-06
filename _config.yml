@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Raj Nath Sah"
   avatar           : "/assets/images/myimg.jpg"
-  bio              : "Another developer with interest in Database, Python, Automation and Big Data."
+  bio              : "Another developer with interest in Database, Python, Analytics, Automation and Big Data."
   location         : "Hyderabad, India"
   email            : #"rajnath@live.in"
   links:
@@ -142,6 +142,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url:  "https://www.linkedin.com/in/rajnathsah/"      
 
 
 # Reading Files
