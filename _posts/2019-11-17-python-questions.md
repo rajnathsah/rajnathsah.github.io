@@ -1,12 +1,14 @@
 ---
 title: Q&A for Python interview
 date: 2020-05-09 00:00:00 +0000
-description: Important questions for Python interview.
+excerpt_separator: "<!--more-->"
 img: python.png # Add image post (optional)
 classes: wide
 tags: [Python, Flask]
 ---
 Important topics in Q&A format is based on my experience. Feel free to update me in case of any observation or you want to add anything.
+
+<!--more-->
 
 ##### 1. How to debug pip installation error?
 For debugging purpose, pip displays some installation message on console. It also offers ways to control console level log by -v,--verbose, -q and --quiet. Full log can be saved by providing --log option with file path, it will have complete installation log. There are cases where currupt download also creates issues at the time of installation, in that case try --no-cache-dir. If that also does not work then you can always try the installation from source file.
