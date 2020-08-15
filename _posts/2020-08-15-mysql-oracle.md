@@ -1,9 +1,9 @@
 ---
 title: MySQL on Oracle Always free compute instance
 date: 2020-08-15 00:00:00 +0000
-excerpt: "How to install MySQL on Oracle always free compute instance and connect from MySQL workbench installed on windows."
+excerpt: "Install MySQL on Oracle always free compute instance and connect from MySQL workbench installed on windows."
 classes: # wide
-tags: [MySQL, Oracle Linux, Cloud, MySQL Workbench] # add tag
+tags: [MySQL, Oracle Linux, Cloud, MySQL Workbench]
 toc: true
 toc_sticky: true
 ---
