@@ -775,3 +775,16 @@ print(f.closed)
 ```
 Above also does same, when code is out of context, it print status of file as closed.  
 
+##### 34. How to pass parameter to remote python code execution over ssh?
+In case of distributed system where different systems are involved in executing different parts, we often execute piece of code on different server. In such cases if you want to return some complex data structure like dictionary or list on the fly which is really needed in case of small data sets, thing become complex with no details around it. I found very good peice of code online to solve this problem.  
+```python
+# Parse data for sending as argument
+import urllib.parse
+import json
+dict1_j = urllib.parse.quote(json.dumps(dict1))
+
+# Unparse at receiving end
+import json 
+import urllib.parse 
+dict1 = json.loads(urllib.parse.unquote(sys.argv[1]))
+```
