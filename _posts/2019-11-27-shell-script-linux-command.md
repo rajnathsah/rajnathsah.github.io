@@ -272,3 +272,10 @@ Example to run a cleanup script called "/root/weekly_cleanup.sh" at 01:00 each S
 ```shell
 0 1 * * 0 /root/weekly_cleanup.sh >> /tmp/weekly_cleanup.log 2>&1
 ```
+
+7. How to mount file system path to linux?  
+Create a directory to which it needs to be mounted and then run sudo mount "File System path" "Local System path".
+```shell
+sudo mount /dev/sdb1 /mnt/media
+```
+
