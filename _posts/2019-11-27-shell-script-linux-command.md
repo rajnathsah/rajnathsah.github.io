@@ -1,6 +1,6 @@
 ---
 title: "Useful Linux command and Shell script sniplets"
-date: 2020-01-06 00:00:00 +0000
+date: 2020-12-24 00:00:00 +0000
 description: Useful linux command and shell script. # Add post description (optional)
 img:  # Add image post (optional)
 classes: wide
@@ -279,3 +279,17 @@ Create a directory to which it needs to be mounted and then run sudo mount "File
 sudo mount /dev/sdb1 /mnt/media
 ```
 
+8. How to find process running on specific port in linux?
+List of running process on port can be find using lsof command.  
+```shell
+lsof -i :<port>
+lsof -i :80
+```
+
+9. How to create and remove symbolic link in linux for any path?
+```shell
+# Create
+ln -s <source path> <new path/link name>
+# Remove
+unlink <link name>
+```
