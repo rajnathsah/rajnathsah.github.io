@@ -1,6 +1,6 @@
 ---
 title: Q&A for Python interview
-date: 2020-05-09 00:00:00 +0000
+date: 2021-01-31 00:00:00 +0000
 excerpt_separator: "<!--more-->"
 img: python.png # Add image post (optional)
 classes: wide
