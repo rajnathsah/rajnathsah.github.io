@@ -8,7 +8,7 @@ toc_sticky: true
 
 ## Developer
 
-I'm an application developer who is passionate about open source technology, database application and problem solving. In my free time, i exlore technogy and put in my own words in blog. Some of the technologies i enjoy working with includes Python, Flask, Oracle Database and Shell Scripting.  
+I'm an application developer who is passionate about open source technology, automation, database application and problem solving. In free time, i explore technology and put in my own words in blog. Some of the technologies i enjoy working with includes Python, Flask, Oracle Database and Shell Scripting.  
 
 ## Blogger
 
