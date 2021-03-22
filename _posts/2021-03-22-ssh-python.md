@@ -1,5 +1,5 @@
 ---
-title: Command execution over SSH
+title: Command execution over SSH using Python libraries.
 date: 2021-03-22 00:00:00 +0000
 description: Execute command and script over SSH using python library.
 img:  # Add image post (optional)
@@ -81,4 +81,5 @@ except (OSError, asyncssh.Error) as exc:
     sys.exit('SSH connection failed: ' + str(exc))
 ```
 ## Issue with long running commands
+Above examples works well in most cases and it worked for me also, but in coporate network where everything is behind firewall, these firewalls causes issue in case of long running commands/scripts. Here firewall means the firewall software which are deployed on corporate networks. These firewall monitors network connections and if there is a long running idle sessions, then it disconnects automatically. It is a security measure but it can cause problems for programs which takes longer and there is communication between client and server. It looks simple but debugging this issue is bit tidious. For me it tooks weeks to come to this conclusion and then i started looking for solution. SSh has option to keep pinging after certain time but unfortunately, i could not find it anywhere.
 ## Solution/workaround
