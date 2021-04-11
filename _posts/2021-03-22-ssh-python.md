@@ -95,7 +95,7 @@ username = 'root'
 password = 'password'
 # script and path
 script_path = "/root/raj/"
-command = "sh returnCode.sh"
+command = "sh sleeptest.sh"
 
 # set 60 sec interval to ping remote
 client = paramiko.Transport((hostname, port))
@@ -151,3 +151,5 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(program())
 loop.close()
 ```
+Hope it will be helpful to anyone new to these library. Do let me know if you find this article useful and feel free to reach me using any medium to discuss on anything.  
+Happy coding!
