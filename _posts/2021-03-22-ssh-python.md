@@ -85,6 +85,7 @@ Above examples works well in most cases and it worked for me also, but in copora
 ## Solution/workaround
 Solution to this problem is very simple, We need to keep session alive by doing something during the long running idle session. Either you return something or pass something but bit tedius to implement. But ssh has very nice option to send ping after given interval, this helps in keeping the session active and alive. We see an example using paramiko where using transport, keep alive interval can be set.  
 * Example using paramiko  
+
 ```python
 import paramiko
 
