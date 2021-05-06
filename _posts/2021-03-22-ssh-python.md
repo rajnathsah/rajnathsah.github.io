@@ -118,8 +118,8 @@ err = stderr.readlines()
 
 session.close()
 client.close()
-```
-*  Example using asyncssh
+```  
+*  Example using asyncssh  
 ```python
 import asyncio, asyncssh, sys
 
