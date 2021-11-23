@@ -36,9 +36,9 @@ client.connect(hostname =hostname,
 # run command
 _, stdout, stderr = client.exec_command('cd {} && {}'.format(script_path, command))
 
-exit_code = stdout.channel.recv_exit_status()
 out = stdout.readlines()
 err = stderr.readlines()
+exit_code = stdout.channel.recv_exit_status()
 client.close()
 ```
 ## Asyncssh
