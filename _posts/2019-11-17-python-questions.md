@@ -1,6 +1,6 @@
 ---
 title: Q&A for Python interview
-date: 2021-01-31 00:00:00 +0000
+date: 2021-11-23 00:00:00 +0000
 excerpt_separator: "<!--more-->"
 img: python.png # Add image post (optional)
 classes: wide
@@ -811,3 +811,14 @@ password = ''.join(password_list)
 
 print('Random generated password :{}'.format(new_password))
 ```
+
+##### 36. Restriction on dictionary key data type.
+Python dictionary key can be of any data type but it can not have mutable object/data type as key. In other a dictionary can not have a list or dict as key.
+
+##### 37. What is patch in rest api?
+
+##### 38. Difference between filter and reduce.
+
+##### 39. Data caching in flask api.
+
+##### 40. Ashnchronous request in flask.
