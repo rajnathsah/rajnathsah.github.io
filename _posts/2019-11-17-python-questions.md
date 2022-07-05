@@ -822,3 +822,7 @@ Python dictionary key can be of any data type but it can not have mutable object
 ##### 39. Data caching in flask api.
 
 ##### 40. Ashnchronous request in flask.
+
+##### 41. How to create singleton class in Python?
+
+##### 42. Describe SOLID coding priciple with example.
