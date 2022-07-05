@@ -1,5 +1,5 @@
 ---
-title: Automate airflow scheduler log cleanup.
+title: Automate airflow scheduler log cleanup
 date: 2021-10-06 00:00:00 +0000
 description: Automate airflow scheduler log clean up using scheduler airflow dag.
 img:  # Add image post (optional)
