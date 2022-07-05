@@ -1,5 +1,5 @@
 ---
-title: Command execution over SSH using Python libraries.
+title: Remote command execution over SSH using Python
 date: 2021-03-22 00:00:00 +0000
 description: Execute command and script over SSH using python library.
 img:  # Add image post (optional)
