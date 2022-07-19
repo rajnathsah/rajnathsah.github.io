@@ -826,3 +826,12 @@ Python dictionary key can be of any data type but it can not have mutable object
 ##### 41. How to create singleton class in Python?
 
 ##### 42. Describe SOLID coding priciple with example.
+
+##### 42. Find sum of n numbers without using any loop or in-built functions.
+```python
+def sum(n):
+    if n <= 1:
+        return n
+    else:
+        return n + sum(n-1)
+```
