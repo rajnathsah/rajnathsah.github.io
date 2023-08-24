@@ -835,3 +835,5 @@ def sum(n):
     else:
         return n + sum(n-1)
 ```
+
+##### 43. Check balanced parentheses in Python.
