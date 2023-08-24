@@ -233,25 +233,25 @@ Example:
 class ObjectCreator(object):
   pass
 
-# you can print a class because it's an object
+### you can print a class because it's an object
 print(ObjectCreator) 
 
 def echo(o):
   print(o)
 
-# you can pass a class as a parameter
+### you can pass a class as a parameter
 echo(ObjectCreator) 
 
 print(hasattr(ObjectCreator, 'new_attribute'))
 
-# you can add attributes to a class
+### you can add attributes to a class
 ObjectCreator.new_attribute = 'foo'
 
 print(hasattr(ObjectCreator, 'new_attribute'))
 
 print(ObjectCreator.new_attribute)
 
-# you can assign a class to a variable
+### you can assign a class to a variable
 ObjectCreatorMirror = ObjectCreator 
 print(ObjectCreatorMirror.new_attribute)
 
