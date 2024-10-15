@@ -54,3 +54,18 @@ toc_sticky: true
 
 15.  Mad Libs Game:  
     Create a Mad Libs game where the user inputs words, and the program generates a funny story using those words.
+
+16.  Hangman Game:  
+    Build a Hangman game where the user guesses letters to figure out a hidden word.
+
+17.  Tic-Tac-Toe Game:  
+    Develop a Tic-Tac-Toe game that can be played between two players or against the computer.
+
+18.  Flashcard App:  
+    Create a flashcard application for studying vocabulary or other subjects.
+
+19.  Unit Converter:  
+    Build a unit converter that converts between different units of measurement (e.g., length, weight, temperature).
+
+20.  Simple Alarm Clock:  
+    Develop a simple alarm clock that allows users to set an alarm and notifies them when the time is reached.
