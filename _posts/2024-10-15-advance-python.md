@@ -1,5 +1,5 @@
 ---
-title: Python learning path - 2
+title: Python Learning Path - 2
 date: 2024-10-15 00:00:00 +0000
 excerpt: "Curated learning path to be a Python developer. Starting from basic to advance concepts and followed by DIY approach. Follow this post and keep learning."
 classes: # wide
