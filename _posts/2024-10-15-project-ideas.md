@@ -1,5 +1,5 @@
 ---
-title: Project Ideas to learn Python by DIY Approach
+title: Project Ideas to Learn Python [DIY Approach]
 date: 2024-10-15 00:00:00 +0000
 excerpt: "Curated list of projects for learning Python by developing small applications. These are some of ideas for those who have started learning Python."
 classes: # wide
