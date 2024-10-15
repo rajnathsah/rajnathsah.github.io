@@ -43,8 +43,8 @@ In this post, we will continue our learning from basic to advance topics of pyth
     *  Understand metaclasses and their applications.
     *  Explore dynamic code generation and manipulation.
     *  Resources:
-        *  [Metaclasses in Python]
-        *  [Dynamic Code Generation]
+        *  [Metaclasses in Python](https://realpython.com/python-metaclasses/)
+        *  [Dynamic Code Generation](https://realpython.com/python-code-generation/)
 
 6.  Concurrency and Parallelism:
     *  Learn about threading, multiprocessing, and asynchronous programming with asyncio.
