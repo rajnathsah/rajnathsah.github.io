@@ -61,3 +61,41 @@ In this post, we will continue our learning from basic to advance topics of pyth
          *   [Flask](https://flask.palletsprojects.com/)
          *   [Django](https://www.djangoproject.com/)
          *   [FastAPI](https://fastapi.tiangolo.com/)
+
+8.  Testing and Debugging:
+    *  Write unit tests using unittest and pytest.
+    *  Learn advanced debugging techniques and tools.
+    *  Resources:
+         *   [Unit Testing](https://realpython.com/python-testing/)
+         *   [Pytest](https://docs.pytest.org/en/stable/)
+         *   [Debugging Techniques](https://realpython.com/python-debugging-pdb/)
+           
+9.  Performance Optimization:
+    *  Profile and optimize code for performance using cProfile, timeit, and other tools.
+    *  Understand memory management and garbage collection.
+    *  Resources:
+         *   [Profiling and Optimization](https://realpython.com/python-performance/)
+         *   [Memory Management](https://realpython.com/python-memory-management/)
+           
+10.  Interfacing with C/C++:
+    *  Use ctypes and cffi to interface with C libraries.
+    *  Explore writing Python extensions in C for performance-critical code.
+    *  Resources:
+         *   [Ctypes](https://docs.python.org/3/library/ctypes.html)
+         *   [CFFI](https://cffi.readthedocs.io/en/latest/)
+         *   [Python Extensions in C](https://docs.python.org/3/extending/extending.html)
+
+11.  Deployment and Distribution:
+    *  Learn about packaging and distributing Python applications with setuptools and pip.
+    *  Explore containerization with Docker and deployment on cloud platforms.
+    *  Resources:
+         *   [Setuptools](https://setuptools.pypa.io/en/latest/)
+         *   [Docker](https://www.docker.com/)
+         *   [Deploying Python Applications](https://realpython.com/deploying-a-python-web-application/)
+
+12.  Security:
+    *  Understand common security practices and vulnerabilities.
+    *  Learn about cryptography and secure coding practices.
+    *  Resources:
+         *   [Python Security](https://realpython.com/python-security/)
+         *   [Cryptography](https://cryptography.io/en/latest/)
