@@ -176,7 +176,7 @@ We will explore the concept with sample example and easy to follow steps.
 4. Once the pipeline succeeds, your application will be deployed to production automatically.  
 
 ## Conclusion
-In this tutorial, we explored how to set up a CI/CD pipeline using GitHub Actions for a Python project. We created a GitHub repository, configured the CI/CD pipeline, and monitored its execution. By automating the build, test, and deployment processes, we can ensure that our code is always in a deployable state, leading to faster and more reliable software releases.  
+In this tutorial, we explored how to set up a CI/CD pipeline using GitHub Actions for a Python project. We created a GitHub repository, configured the CI/CD pipeline, and monitored its execution. By automating the build, test, and deployment processes, we can ensure that our code is always in a deployable state, leading to faster and more reliable software releases. Sample code along with the configuration file is provided for reference and can be accessed [here](https://github.com/rajnathsah/learncicdrelease)
 
 ## Additional Resources
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
@@ -194,3 +194,4 @@ In this tutorial, we explored how to set up a CI/CD pipeline using GitHub Action
 - [GitHub Actions Marketplace](https://github.com/marketplace?type=actions)
 - [GitHub Actions Examples](https://github.com/actions)
 - [GitHub Actions CI/CD](https://github.com/actions)
+-
