@@ -40,7 +40,7 @@ We will explore the concept with sample example and easy to follow steps.
     git push origin ci-cd-setup
     ```
 5. Create a pull request to merge the `ci-cd-setup` branch into the `main` branch.
-6. Review and merge the pull request on GitHub.
+6. Review and merge the pull request on GitHub.  
 ## Step 2: Create a CI/CD Configuration File
 1. In the root of your repository, create a directory named `.github/workflows`.
 2. Inside the `workflows` directory, create a YAML file (e.g., `ci-cd.yml`) for your CI/CD configuration.
